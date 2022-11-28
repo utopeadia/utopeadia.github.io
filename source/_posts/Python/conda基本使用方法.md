@@ -30,7 +30,7 @@ conda config --set show_channel_urls yes
 
 这样我们就可以在用户目录中看到了
 
-![批注 2020-03-03 082145](https://image.aiwush.com/16311032790082.png)
+![批注 2020-03-03 082145](https://img.wush.cc/16311032790082.png)
 
 使用命令
 
@@ -62,7 +62,7 @@ custom_channels:
 
 保存即可
 
-![批注 2020-03-03 082519](https://image.aiwush.com/16311032790094.png)
+![批注 2020-03-03 082519](https://img.wush.cc/16311032790094.png)
 
 运行 `conda clean -i` 清除索引缓存，保证用的是镜像站提供的索引。
 
@@ -72,7 +72,7 @@ custom_channels:
 
 点开environment可见中间和右侧有两栏：
 
-![批注 2020-03-03 083116](https://image.aiwush.com/16311032790102.png)
+![批注 2020-03-03 083116](https://img.wush.cc/16311032790102.png)
 
 中间栏是虚拟环境，默认为base。
 

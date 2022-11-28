@@ -62,7 +62,7 @@ WSL的官方文档地址：[https://docs.microsoft.com/zh-cn/windows/wsl/](https
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 ```
 
-![image-20210615214513985](https://image.aiwush.com/16310927929108.png)
+![image-20210615214513985](https://img.wush.cc/16310927929108.png)
 
 检查系统是否支持WSL2:
 
@@ -80,7 +80,7 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
-![image-20210615214538701](https://image.aiwush.com/16310927929124.png)
+![image-20210615214538701](https://img.wush.cc/16310927929124.png)
 
 **重启计算机**
 
@@ -94,7 +94,7 @@ wsl --set-default-version 2
 
 安装Linux发行版
 
-![image-20210508172714461](https://image.aiwush.com/16310927929140.png)
+![image-20210508172714461](https://img.wush.cc/16310927929140.png)
 
 安装完成后点击启动，首次启动需要输入用户名和密码。
 
@@ -104,13 +104,13 @@ wsl --set-default-version 2
 
 **方法一**：通过 `\wsl$` 访问 Linux 文件时将使用 WSL 分发版的默认用户。 因此，任何访问 Linux 文件的 Windows 应用都具有与默认用户相同的权限。
 
-![image-20210508173452287](https://image.aiwush.com/16310927929157.png)
+![image-20210508173452287](https://img.wush.cc/16310927929157.png)
 
-![image-20210508173505060](https://image.aiwush.com/16310927929175.png)
+![image-20210508173505060](https://img.wush.cc/16310927929175.png)
 
 **方法二**：通过VS Code访问Linux文件
 
-![image-20210508173654794](https://image.aiwush.com/16310927929199.png)
+![image-20210508173654794](https://img.wush.cc/16310927929199.png)
 
 参考文档：[CSDN博客](https://blog.csdn.net/Caoyang_He/article/details/107898883)
 
@@ -118,7 +118,7 @@ wsl --set-default-version 2
 
 将所需的文件复制到WSL的目录中，我一般遵循实体机的习惯放置到下载目录。
 
-![image-20210508195157301](https://image.aiwush.com/16310927929225.png)
+![image-20210508195157301](https://img.wush.cc/16310927929225.png)
 
 cd到存放目录使用tar命令解压压缩文件：
 
@@ -126,7 +126,7 @@ cd到存放目录使用tar命令解压压缩文件：
 tar -zxvf jdk-8u291-linux-x64.tar.gz
 ```
 
-![image-20210508195432732](https://image.aiwush.com/16310927929255.png)
+![image-20210508195432732](https://img.wush.cc/16310927929255.png)
 
 使用cp命令修改文件名便于后续操作(jdk1.8.0_291为解压后文件)
 
@@ -158,7 +158,7 @@ export PATH=$JAVA_HOME/bin:$PATH
 export CLASSPATH=:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 ```
 
-![image-20210508200001858](https://image.aiwush.com/16310927929285.png)
+![image-20210508200001858](https://img.wush.cc/16310927929285.png)
 
 添加完成后按ESC键输入:wq!保存并退出。
 
@@ -170,15 +170,15 @@ source /etc/profile
 
 输入 java -version和javac -version测试无异常即可。
 
-![](https://image.aiwush.com/16310927929316.png)
+![](https://img.wush.cc/16310927929316.png)
 
 ## 子系统安装Maven
 
 安装步骤与Java基本相同，解压到制定目录，添加到环境。
 
-![image-20210508200803292](https://image.aiwush.com/16310927929349.png)
+![image-20210508200803292](https://img.wush.cc/16310927929349.png)
 
-![image-20210508201047562](https://image.aiwush.com/16310927929383.png)
+![image-20210508201047562](https://img.wush.cc/16310927929383.png)
 
 写入：(同样注意修改路径)
 
@@ -190,7 +190,7 @@ export PATH=$PATH:$MAVEN_HOME/bin
 
 使用source /etc/profile刷新后使用mvn -v检查能否正常使用。
 
-![image-20210508201408277](https://image.aiwush.com/16310927929415.png)
+![image-20210508201408277](https://img.wush.cc/16310927929415.png)
 
 ## 子系统安装Hadoop
 
@@ -215,11 +215,11 @@ ssh localhost
 
 执行该命令后会，会出现“yes/no”选择提示，输入“`yes`”，然后按提示输入密码。如果出现以下提示：
 
-![image-20210508203159696](https://image.aiwush.com/16310927929444.png)
+![image-20210508203159696](https://img.wush.cc/16310927929444.png)
 
 修改/etc/ssh/sshd_config文件中PasswordAuthentication为yes
 
-![image-20210508203310871](https://image.aiwush.com/16310927929478.png)
+![image-20210508203310871](https://img.wush.cc/16310927929478.png)
 
 重启服务即可。
 
@@ -241,7 +241,7 @@ Hadoop包括三种安装模式：
 
 解压hadoop到制定目录：（我放在了/opt/hadoop）
 
-![image-20210508201925362](https://image.aiwush.com/16310927929509.png)
+![image-20210508201925362](https://img.wush.cc/16310927929509.png)
 
 配置环境
 
@@ -253,13 +253,13 @@ export PATH=.:${JAVA_HOME}/bin:${HADOOP_HOME}/bin:$PATH
 
 刷新后使用hadoop verson命令检查：
 
-![image-20210508202315915](https://image.aiwush.com/16310927929542.png)
+![image-20210508202315915](https://img.wush.cc/16310927929542.png)
 
 ## 子系统安装Spark
 
 解压spark到制定目录：（我放在了/opt/spark）
 
-![image-20210508203818567](https://image.aiwush.com/16310927929575.png)
+![image-20210508203818567](https://img.wush.cc/16310927929575.png)
 
 关联用户：
 
@@ -306,6 +306,6 @@ PYTHONPATH环境变量主要是为了在Python3中引入pyspark库，PYSPARK_PYT
 run-example SparkPi 2>&1  grep "Pi is"
 ```
 
-![image-20210508205048765](https://image.aiwush.com/16310927929608.png)
+![image-20210508205048765](https://img.wush.cc/16310927929608.png)
 
 如果正常则安装完成。

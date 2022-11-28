@@ -16,4 +16,4 @@ if __name__ == '__main__':
     print(ncount)
 ```
 
-![-w114](https://image.aiwush.com/16311031874591.png)
+![-w114](https://img.wush.cc/16311031874591.png)

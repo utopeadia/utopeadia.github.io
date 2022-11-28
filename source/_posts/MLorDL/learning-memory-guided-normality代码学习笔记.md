@@ -251,9 +251,9 @@ class Memory(nn.Module):
 
 实现了文献中的权重计算
 
-![](https://image.aiwush.com/16311022866248.png)
+![](https://img.wush.cc/16311022866248.png)
 
-![image-20201202104454789](https://image.aiwush.com/16311022866273.png)
+![image-20201202104454789](https://img.wush.cc/16311022866273.png)
 
 ## Read过程
 

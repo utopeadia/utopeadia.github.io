@@ -34,7 +34,7 @@ arr = np.arange(36).reshape(3, 4, 3)
 print(arr)
 ```
 
-![-w105](https://image.aiwush.com/16311032484388.png)
+![-w105](https://img.wush.cc/16311032484388.png)
 
 ​ 在二维中描述高维数组可能会比较困难。考虑到数组形状的一种直观方法是简单的“从左到右读取它”。arr就是一个 $3\times4\times3$的数组：
 
@@ -44,9 +44,9 @@ arr = np.arange(36).reshape(3, 4, 3)
 print(arr.shape)
 ```
 
-![-w70](https://image.aiwush.com/16311032484400.png)
+![-w70](https://img.wush.cc/16311032484400.png)
 
-​ 在视觉上，arr可以被认为是三个$4 \times3 $ 网格（或矩形棱镜）的容器，看起来像是： ![-w399](https://image.aiwush.com/16311032484410.png)
+​ 在视觉上，arr可以被认为是三个$4 \times3 $ 网格（或矩形棱镜）的容器，看起来像是： ![-w399](https://img.wush.cc/16311032484410.png)
 
 ​ 更高纬度的数组可能更难以用图像表达出来，但是他们仍然遵循这种“数组内的数组”模式。
 
@@ -68,7 +68,7 @@ x = np.random.choice([False, True], size=100000)
 print(x)
 ```
 
-![-w290](https://image.aiwush.com/16311032484424.png)
+![-w290](https://img.wush.cc/16311032484424.png)
 
 ​ 使用python for循环，一种方法使成对的评估每个元素的[真值](https://docs.python.org/3/library/stdtypes.html#truth-value-testing)以及紧随其后的元素：
 
@@ -90,7 +90,7 @@ def cout_transitions(x) -> int:
 print(cout_transitions(x))
 ```
 
-![-w298](https://image.aiwush.com/16311032484438.png)
+![-w298](https://img.wush.cc/16311032484438.png)
 
 在矢量化形式中，没有明确的for循环或直接引用各个元素：
 
@@ -154,7 +154,7 @@ print(profit(prices))
  ax.plot(mx, prices[mx], color='red', **kwargs)
 ```
 
-![-w674](https://image.aiwush.com/16311032484453.png) NumPy实现是什么样的？ 虽然没有np.cummin() “直接”，但NumPy的通用函数（ufuncs）都有一个accumulate()方法，它的名字暗示了：
+![-w674](https://img.wush.cc/16311032484453.png) NumPy实现是什么样的？ 虽然没有np.cummin() “直接”，但NumPy的通用函数（ufuncs）都有一个accumulate()方法，它的名字暗示了：
 
 ```python
 cummin = np.minimum.accumulate
