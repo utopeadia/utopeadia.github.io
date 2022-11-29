@@ -12,7 +12,7 @@ date: 2020-11-28 21:43:27
 
 请查看我的博客：
 
-[https://www.aiwush.com/python/anaconda安装教程](https://www.aiwush.com/python/anaconda%e5%ae%89%e8%a3%85%e6%95%99%e7%a8%8b/)
+[https://www.wush.cc/python/anaconda安装教程](https://www.wush.cc/python/anaconda%e5%ae%89%e8%a3%85%e6%95%99%e7%a8%8b/)
 
 **本教程全部命令操作均在CMD(win)、terminal(win)、终端(linux/Macos)中执行**
 
