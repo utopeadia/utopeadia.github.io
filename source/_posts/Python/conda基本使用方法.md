@@ -12,7 +12,7 @@ date: 2020-11-28 21:43:27
 
 请查看我的博客：
 
-[https://www.wush.cc/python/anaconda安装教程](https://www.wush.cc/python/anaconda%e5%ae%89%e8%a3%85%e6%95%99%e7%a8%8b/)
+[Anaconda安装教程 - Howie的部落阁](https://www.wush.cc/Python/anaconda%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/)
 
 **本教程全部命令操作均在CMD(win)、terminal(win)、终端(linux/Macos)中执行**
 
@@ -80,8 +80,8 @@ custom_channels:
 > 
 > 虚拟环境简单来说就是不同的Python环境，好处有很多，比如：
 > 
-> *   虚拟环境中可以安装不同的python和Python包，这样可以防止出现开发时不同项目需要不同版本包带来的尴尬；
-> *   加快加载速度，单个项目只需要导入该项目虚拟环境中的包即可，无需导入全部包。
+> * 虚拟环境中可以安装不同的python和Python包，这样可以防止出现开发时不同项目需要不同版本包带来的尴尬；
+> * 加快加载速度，单个项目只需要导入该项目虚拟环境中的包即可，无需导入全部包。
 
 使用加号**Create**创建环境，在右侧添加删除或者更新包即可使用。
 
