@@ -883,8 +883,6 @@ giscus:
   input-position: top
   lang: zh-CN
   loading: lazy
-  data-lang: zh-CN
-  data-loading: lazy
 
 #---------------------------
 # 归档页
