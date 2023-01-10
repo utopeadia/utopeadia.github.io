@@ -14,7 +14,8 @@ timezone: ''
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://www.wush.cc
-permalink: :title/
+# permalink: :title/
+permalink: :title.html
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -134,7 +135,9 @@ theme: fluid
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
+- type: git
   repository: https://github.com/howie-wu/howie-wu.github.io
   branch: master
   token: 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
+
+- type: baidu_url_submitter
