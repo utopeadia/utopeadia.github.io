@@ -877,11 +877,12 @@ giscus:
   category-id: DIC_kwDOIBGxt84CRfo_
   theme-light: light
   theme-dark: dark
-  mapping: pathname
+  mapping: og:title
   reactions-enabled: 1
   emit-metadata: 0
   input-position: top
   lang: zh-CN
+  data-lang: zh-CN
 
 #---------------------------
 # 归档页
