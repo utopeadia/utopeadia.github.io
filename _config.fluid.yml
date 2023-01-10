@@ -872,9 +872,9 @@ cusdis:
 # See: https://giscus.app/
 giscus:
   repo: how1ewu/blog-giscus
-  repo-id: R_kgDOIBGxtw
+  repo-id: R_kgDOIv84hQ
   category: General
-  category-id: DIC_kwDOIBGxt84CRfo_
+  category-id: DIC_kwDOIv84hc4CTf9f
   theme-light: light
   theme-dark: dark
   mapping: og:title
