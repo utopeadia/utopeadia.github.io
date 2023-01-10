@@ -871,7 +871,7 @@ cusdis:
 # Based on GitHub Discussions, similar to Utterances
 # See: https://giscus.app/
 giscus:
-  repo: how1ewu/blogtalk-giscus
+  repo: how1ewu/blog-giscus
   repo-id: R_kgDOIBGxtw
   category: General
   category-id: DIC_kwDOIBGxt84CRfo_
