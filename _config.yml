@@ -95,9 +95,11 @@ include:
 exclude:
 ignore:
 
-# sitemap
+# 自动生成sitemap
 sitemap:
 path: sitemap.xml
+baidusitemap:
+path: baidusitemap.xml
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
