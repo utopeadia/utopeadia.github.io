@@ -134,9 +134,5 @@ theme: fluid
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-- type: git
-  repository: https://github.com/howie-wu/howie-wu.github.io
-  branch: master
-  token: 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
 
 - type: baidu_url_submitter
