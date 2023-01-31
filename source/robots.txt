@@ -11,5 +11,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: https://www.wush.cc/sitemap.xml
-Sitemap: https://www.wush.cc/baidusitemap.xml
+Sitemap: https://www.how1e.com/sitemap.xml
+Sitemap: https://www.how1e.com/baidusitemap.xml

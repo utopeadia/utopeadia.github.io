@@ -146,11 +146,11 @@ id = os.path.splitext(fn)[0]
 
 ## 实现Creat_tokenizer
 
-![截屏2020-02-26下午12.41.39](https://img.wush.cc/16311026794517.png)
+![截屏2020-02-26下午12.41.39](https://img.how1e.com/16311026794517.png)
 
 文本预处理可以通过keras实现
 
-![截屏2020-02-26下午12.48.41](https://img.wush.cc/16311026794540.png)
+![截屏2020-02-26下午12.48.41](https://img.how1e.com/16311026794540.png)
 
 文本标记实用类。
 
@@ -184,9 +184,9 @@ print(results[0])
 
 ## 实现create_input_data_for_one_image函数
 
-![截屏2020-02-26下午1.28.23](https://img.wush.cc/16311026794561.png)
+![截屏2020-02-26下午1.28.23](https://img.how1e.com/16311026794561.png)
 
-![截屏2020-02-26下午1.28.46](https://img.wush.cc/16311026794580.png)
+![截屏2020-02-26下午1.28.46](https://img.how1e.com/16311026794580.png)
 
 ```python
 def create_input_data(tokenizer, max_length, descriptions, photos_features, vocab_size):

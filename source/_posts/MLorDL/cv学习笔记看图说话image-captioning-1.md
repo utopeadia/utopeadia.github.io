@@ -12,27 +12,27 @@ date: 2020-02-22 21:59:37
 
 分别使用CNN和LSTM对图像和文字进行处理：
 
-![截屏2020-02-23上午9.06.01](https://img.wush.cc/16311026582366.png)
+![截屏2020-02-23上午9.06.01](https://img.how1e.com/16311026582366.png)
 
-![截屏2020-02-23上午9.06.31](https://img.wush.cc/16311026582387.png)
+![截屏2020-02-23上午9.06.31](https://img.how1e.com/16311026582387.png)
 
 将两个神经网络结合：
 
-![截屏2020-02-23上午9.07.08](https://img.wush.cc/16311026582405.png)
+![截屏2020-02-23上午9.07.08](https://img.how1e.com/16311026582405.png)
 
 ### 应用领域
 
 #### 图像搜索
 
-![截屏2020-02-23上午9.07.56](https://img.wush.cc/16311026582430.png)
+![截屏2020-02-23上午9.07.56](https://img.how1e.com/16311026582430.png)
 
 #### 安全
 
-![截屏2020-02-23上午9.08.18](https://img.wush.cc/16311026582465.png)
+![截屏2020-02-23上午9.08.18](https://img.how1e.com/16311026582465.png)
 
 #### 鉴黄
 
-![截屏2020-02-23上午9.09.02](https://img.wush.cc/16311026582502.png)
+![截屏2020-02-23上午9.09.02](https://img.how1e.com/16311026582502.png)
 
 ### 涉猎知识
 
@@ -62,7 +62,7 @@ Framing Image Description as a Ranking Task:Data, Models, and Evaluation Metrics
 
 ### 数据示例
 
-![截屏2020-02-23上午10.34.47](https://img.wush.cc/16311026582547.png)
+![截屏2020-02-23上午10.34.47](https://img.how1e.com/16311026582547.png)
 
 * A child in a pink dress is climbing up a set of stairs in an entry way.
 * A girl going into a wooden building .
@@ -87,11 +87,11 @@ Very Deep Convplutional Networks For Large-Scale Visual Recognition
 
 * 用于图像分类，讲输入图像分为1000个类别
   
-  ![截屏2020-02-23上午8.57.39](https://img.wush.cc/16311026582590.png)
+  ![截屏2020-02-23上午8.57.39](https://img.how1e.com/16311026582590.png)
 
 绿色标注为VGG网络。可以看出，该网络有16个权值层，5个池化层
 
-![截屏2020-02-23上午11.57.53](https://img.wush.cc/16311026582644.png)
+![截屏2020-02-23上午11.57.53](https://img.how1e.com/16311026582644.png)
 
 ## 编写代码实现网络(练习)
 
@@ -230,7 +230,7 @@ if __name__ == '__main__':
 
 运行可见输出：
 
-![截屏2020-02-23上午11.52.01](https://img.wush.cc/16311026582688.png)
+![截屏2020-02-23上午11.52.01](https://img.how1e.com/16311026582688.png)
 
 ## 看图说话项目
 
@@ -251,15 +251,15 @@ if __name__ == '__main__':
 
 ### 理想网络模型
 
-![截屏2020-02-23上午11.10.07](https://img.wush.cc/16311026582735.png)
+![截屏2020-02-23上午11.10.07](https://img.how1e.com/16311026582735.png)
 
 ### 简化网络模型
 
-![截屏2020-02-23上午11.10.36](https://img.wush.cc/16311026582778.png)
+![截屏2020-02-23上午11.10.36](https://img.how1e.com/16311026582778.png)
 
 ### 从图像到特征
 
-![截屏2020-02-23上午11.11.07](https://img.wush.cc/16311026582829.png)
+![截屏2020-02-23上午11.11.07](https://img.how1e.com/16311026582829.png)
 
 ### 迁移学习(transfer learning)
 

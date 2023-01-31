@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://www.wush.cc
+url: https://www.how1e.com
 permalink: :title/
 permalink_defaults:
 pretty_urls:
@@ -104,7 +104,7 @@ baidusitemap:
 # 主动提交百度
 baidu_url_submit:
   count: 100               # 提交最新的多少个链接
-  host: www.wush.cc    # 在百度站长平台中添加的域名
+  host: www.how1e.com    # 在百度站长平台中添加的域名
   token: aKA39ZcuCPl8dF2T      # 秘钥
   path: baidu_urls.txt   # 文本文档的地址， 新链接会保存在此文本文档里
 

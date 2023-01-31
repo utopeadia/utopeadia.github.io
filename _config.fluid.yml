@@ -445,7 +445,7 @@ footer:
   beian:
     enable: true
     # ICP证号
-    icp_text: 鲁ICP备19000938号-14
+    icp_text: 鲁ICP备19000938号-15
     # 公安备案号，不填则只显示ICP
     police_text:
     # 公安备案的编号，用于URL跳转查询
@@ -725,9 +725,9 @@ post:
   # Comment plugin
   comments:
     # 正常用
-    # enable: true
+    enable: true
     # 备案用
-    enable: false
+    # enable: false
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis | giscus
@@ -1024,7 +1024,7 @@ links:
   # Custom content at the bottom of the links
   custom:
     enable: true
-    content: '<hr><p>在下方留言申请加入我的友链，按如下格式提供信息：</p><ul><li>博客名：Howie部落阁</li><li>简介：Howie的个人小站</li><li>链接：https://www.wush.cc</li><li>图片：/img/favicon.png</li></ul>'
+    content: '<hr><p>在下方留言申请加入我的友链，按如下格式提供信息：</p><ul><li>博客名：Howie部落阁</li><li>简介：Howie的个人小站</li><li>链接：https://www.how1e.com</li><li>图片：/img/favicon.png</li></ul>'
 
   # 评论插件
   # Comment plugin
