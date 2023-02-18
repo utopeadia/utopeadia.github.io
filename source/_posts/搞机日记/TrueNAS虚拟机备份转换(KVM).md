@@ -21,7 +21,7 @@ TrueNAS Scale虚拟化使用ZVOL存储虚拟机，存储路径为：
 dd if=/dev/zvol/SSD/VM/WINServer-0w4sx9 of=/mnt/DATA/downloads/winserver.img
 ```
 
-![](https://img.how1e.com/2022102212022-10-02-21-38-32-image.png)
+![](https://img.wush.cc/2022102212022-10-02-21-38-32-image.png)
 
 其中if为源文件即为zvol文件，of为导出目的文件。
 

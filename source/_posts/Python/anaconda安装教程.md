@@ -16,7 +16,7 @@ Anaconda是一个方便的python包管理和环境管理软件，一般用来配
 
 ### anaconda安装-以windows为例
 
-anaconda的安装可以通过[官网下载](https://www.anaconda.com/distribution/)也可以使用国内的镜像站，比如[清华镜像站](https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/)，选择anaconda3的最新版本即可。 下载完成后就是正常的安装 ![](https://img.how1e.com/16311033266533.jpg) ![](https://img.how1e.com/16311033266555.jpg) ![](https://img.how1e.com/16311033266572.jpg) ![](https://img.how1e.com/16311033266591.jpg)
+anaconda的安装可以通过[官网下载](https://www.anaconda.com/distribution/)也可以使用国内的镜像站，比如[清华镜像站](https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/)，选择anaconda3的最新版本即可。 下载完成后就是正常的安装 ![](https://img.wush.cc/16311033266533.jpg) ![](https://img.wush.cc/16311033266555.jpg) ![](https://img.wush.cc/16311033266572.jpg) ![](https://img.wush.cc/16311033266591.jpg)
 
 *   注意这里有两个勾选，第一个的意思是将anaconda添加到系统环境，第二个勾选是将anaconda自带的Python3.7作为系统默认python，我一般全部勾选
 *   这样就可以使用了。

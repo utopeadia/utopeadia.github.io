@@ -29,4 +29,4 @@ if __name__ == '__main__':
     print('%d / %d = %d' % (sum, zi, r))
 ```
 
-![-w166](https://img.how1e.com/16311032270782.png)
+![-w166](https://img.wush.cc/16311032270782.png)

@@ -24,13 +24,13 @@ WSL_OS：Ubuntu20.04LST
 
 本次编译使用的源代码是openjdk12。通过官方源码仓库进行[下载](https://hg.openjdk.java.net/jdk)。
 
-![image-20210702204112330](https://img.how1e.com/16311013184915.png)
+![image-20210702204112330](https://img.wush.cc/16311013184915.png)
 
 当然官方的源码仓库可能下载比较缓慢，我们可以通过Github进行下载。在Chrome插件或者油猴中，有很多Github加速下载插件，这些插件能够提供有效的CDN支持。当然如果用户懂得正确的上网姿势(魔法上网)，这些方案都不是问题。
 
 [项目地址](https://github.com/openjdk/jdk)
 
-![image-20210702205710569](https://img.how1e.com/16311013184942.png)
+![image-20210702205710569](https://img.wush.cc/16311013184942.png)
 
 ## 搭建编译环境
 
@@ -40,15 +40,15 @@ WSL_OS：Ubuntu20.04LST
 sudo apt install build-essential
 ```
 
-![image-20210702210315895](https://img.how1e.com/16311013184974.png)
+![image-20210702210315895](https://img.wush.cc/16311013184974.png)
 
 **请务必仔细查阅编译文档doc/building.html**
 
 可以看到openjdk编译所需要的外部依赖库
 
-![image-20210702210931823](https://img.how1e.com/16311013185002.png)
+![image-20210702210931823](https://img.wush.cc/16311013185002.png)
 
-![image-20210702211102787](https://img.how1e.com/16311013185027.png)
+![image-20210702211102787](https://img.wush.cc/16311013185027.png)
 
 整理如下
 
@@ -108,13 +108,13 @@ bash configure --enable-debug
 
 根据报错进行调整。Configure命令承担了依赖项检查、参数配置、构建输出等多种任务。会对编译过程中出现的问题进行检查并给出建议。
 
-![image-20210702213739606](https://img.how1e.com/16311013185052.png)
+![image-20210702213739606](https://img.wush.cc/16311013185052.png)
 
-![image-20210702220038754](https://img.how1e.com/16311013185077.png)
+![image-20210702220038754](https://img.wush.cc/16311013185077.png)
 
 编译成功后会收到提示，输出相关信息
 
-![image-20210702220236672](https://img.how1e.com/16311013185100.png)
+![image-20210702220236672](https://img.wush.cc/16311013185100.png)
 
 进入**/build/配置名**目录。
 
@@ -122,4 +122,4 @@ bash configure --enable-debug
 
 编译过程可能比较吃力。
 
-![image-20210702221858891](https://img.how1e.com/16311013185124.png)
+![image-20210702221858891](https://img.wush.cc/16311013185124.png)
