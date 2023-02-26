@@ -1,24 +1,25 @@
 ---
-title: 编译JDK
-tags: []
-id: '199'
+abbrlink: ''
 categories:
-  - - Java
+- - Java
 comments: true
-date: 2021-07-02 22:20:50
+date: '2021-07-02 22:20:50'
+id: 199
+tags: []
+title: 编译JDK
+updated: Sun, 26 Feb 2023 02:36:18 GMT
 ---
-
 ## 编译环境介绍
 
 本次编译尝试在WSL2->下进行， 母机配置如下：
 
-CPU：AMD Ryzen 7 4800H
+CPU：AMD Ryzen 9 7950X
 
-RAM：16GB
+RAM：32GB
 
 OS：Windos11 64bit
 
-WSL_OS：Ubuntu20.04LST
+WSL_OS：Ubuntu22.04LST
 
 ## 获取源代码
 
