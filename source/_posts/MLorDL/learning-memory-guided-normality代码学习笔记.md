@@ -12,7 +12,7 @@ date: 2021-01-08 20:41:16
 
 Memory部分的核心在于以下定义Memory类的部分。
 
-```
+```python
 class Memory(nn.Module):
     def __init__(self, memory_size, feature_dim, key_dim,  temp_update, temp_gather):
         super(Memory, self).__init__()
@@ -234,7 +234,7 @@ class Memory(nn.Module):
 
 在定义中，我们需要看到$v_t^{'k,m}$的计算。代码是通过(score[idx,i] / torch.max(score[:,i])实现的，进一步，我们需要查看$v_t^{k,m}$的计算过程。这个参数与$w$一样是权重，文中通过get_score函数计算权重，如下为此函数的定义：
 
-```
+```python
     def get_score(self, mem, query):
         #计算权重$w_t^{k,m}$
         bs, h,w,d = query.size()
@@ -292,13 +292,7 @@ return updated_query, updated_memory, softmax_score_query, softmax_score_memory,
 
 分别调用update函数和read函数
 
-需要说明损失函数的定义，
-
-$$
-L = L_{rec} + \lambda _cL_{compact}+ \lambda _sL_{separate}
-$$
-
-代码中通过gather_loss函数实现。
+需要说明损失函数的定义，$L = L_{rec} + \lambda _cL_{compact}+ \lambda _sL_{separate}$中通过gather_loss函数实现。
 
 ```python
 def gather_loss(self,query, keys, train):

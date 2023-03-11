@@ -13,6 +13,8 @@ Disallow: /fancybox/
 
 Sitemap: https://www.wush.cc/sitemap.xml
 Sitemap: https://www.wush.cc/baidusitemap.xml
+Sitemap: https://wush.cc/sitemap.xml
+Sitemap: https://wush.cc/baidusitemap.xml
 Sitemap: https://www.how1e.com/sitemap.xml
 Sitemap: https://www.how1e.com/baidusitemap.xml
 Sitemap: https://www.howie-wu.com/sitemap.xml
