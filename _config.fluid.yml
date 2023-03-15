@@ -446,7 +446,7 @@ footer:
   beian:
     enable: true
     # ICP证号
-    icp_text: 鲁ICP备19000938号-15
+    icp_text: 鲁ICP备19000938号
     # 公安备案号，不填则只显示ICP
     police_text:
     # 公安备案的编号，用于URL跳转查询
