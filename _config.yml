@@ -100,7 +100,6 @@ sitemap:
   path: sitemap.xml
 baidusitemap:
   path: baidusitemap.xml
-
 # 主动提交百度
 baidu_url_submit:
   count: 100               # 提交最新的多少个链接
