@@ -131,6 +131,12 @@ theme: fluid
 # theme: stellar
 # theme: cactus
 
+# 自动移至分类文件夹
+auto_category:
+  enable: true
+  multiple: false
+  depth: 
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 
