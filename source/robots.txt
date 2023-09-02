@@ -19,3 +19,7 @@ Sitemap: https://www.how1e.com/sitemap.xml
 Sitemap: https://www.how1e.com/baidusitemap.xml
 Sitemap: https://www.howie-wu.com/sitemap.xml
 Sitemap: https://www.howie-wu.com/baidusitemap.xml
+Sitemap: https://www.iswsh.com/sitemap.xml
+Sitemap: https://www.iswsh.com/baidusitemap.xml
+Sitemap: https://iswsh.com/sitemap.xml
+Sitemap: https://iswsh.com/baidusitemap.xml
