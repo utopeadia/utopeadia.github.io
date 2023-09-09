@@ -462,7 +462,7 @@ footer:
 index:
   # 首页 Banner 头图，可以是相对路径或绝对路径，以下相同
   # Path of Banner image, can be a relative path or an absolute path, the same on other pages
-  banner_img: https://s2.loli.net/2023/04/08/sKTVDte69w5PzpE.jpg
+  banner_img: https://img.wush.cc/202309091131378.jpg
 
   # 头图高度，屏幕百分比
   # Height ratio of banner image
@@ -534,7 +534,7 @@ index:
 # Post Page
 #---------------------------
 post:
-  banner_img: https://s2.loli.net/2023/04/08/sKTVDte69w5PzpE.jpg
+  banner_img: https://img.wush.cc/202309091131378.jpg
   banner_img_height: 70
   banner_mask_alpha: 0.3
 
@@ -899,7 +899,7 @@ discuss:
 # Archive Page
 #---------------------------
 archive:
-  banner_img: https://s2.loli.net/2023/04/08/sKTVDte69w5PzpE.jpg
+  banner_img: https://img.wush.cc/202309091131378.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -910,7 +910,7 @@ archive:
 #---------------------------
 category:
   enable: true
-  banner_img: https://s2.loli.net/2023/04/08/sKTVDte69w5PzpE.jpg
+  banner_img: https://img.wush.cc/202309091131378.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -939,7 +939,7 @@ category:
 #---------------------------
 tag:
   enable: true
-  banner_img: https://s2.loli.net/2023/04/08/sKTVDte69w5PzpE.jpg
+  banner_img: https://img.wush.cc/202309091131378.jpg
   banner_img_height: 80
   banner_mask_alpha: 0.3
   tagcloud:
@@ -956,7 +956,7 @@ tag:
 #---------------------------
 about:
   enable: true
-  banner_img: https://s2.loli.net/2023/04/08/sKTVDte69w5PzpE.jpg
+  banner_img: https://img.wush.cc/202309091131378.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
   avatar: https://img.wush.cc/202381318%E5%8D%A1%E9%80%9A%E5%BD%A2%E8%B1%A1%E7%85%A7.png
@@ -978,7 +978,7 @@ about:
 # Custom Page through `hexo new page`
 #---------------------------
 page:
-  banner_img: https://s2.loli.net/2023/04/08/sKTVDte69w5PzpE.jpg
+  banner_img: https://img.wush.cc/202309091131378.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -989,7 +989,7 @@ page:
 #---------------------------
 page404:
   enable: true
-  banner_img: https://s2.loli.net/2023/04/08/sKTVDte69w5PzpE.jpg
+  banner_img: https://img.wush.cc/202309091131378.jpg
   banner_img_height: 85
   banner_mask_alpha: 0.3
   # 重定向到首页的延迟(毫秒)
@@ -1003,7 +1003,7 @@ page404:
 #---------------------------
 links:
   enable: true
-  banner_img: https://s2.loli.net/2023/04/08/sKTVDte69w5PzpE.jpg
+  banner_img: https://img.wush.cc/202309091131378.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
   # 友链的成员项
@@ -1013,19 +1013,19 @@ links:
       title: "Howie GitHub",
       intro: "Howie的GitHub首页",
       link: "https://github.com/how1ewu",
-      avatar: "https://s2.loli.net/2022/05/04/2V7Z6kWfsQLyEUN.png"
+      avatar: "https://img.wush.cc/202309091132617.png"
     }
     - {
       title: "Fluid Repo",
       intro: "主题 GitHub 仓库",
       link: "https://github.com/fluid-dev/hexo-theme-fluid",
-      avatar: "https://s2.loli.net/2022/04/22/XUAgcvsqOJhkin9.png"
+      avatar: "https://img.wush.cc/202309091132296.png"
     }
     - {
       title: "Xyfuture's Blog",
       intro: "Xyfuture的博客",
       link: "https://xyfuture.github.io/",
-      avatar: "https://s2.loli.net/2022/11/29/fXiyB7kRuDhdznc.jpg"
+      avatar: "https://img.wush.cc/202309091132232.png"
     }
   # 当成员头像加载失败时，替换为指定图片
   # When the member avatar fails to load, replace the specified image
