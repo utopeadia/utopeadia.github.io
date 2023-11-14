@@ -11,18 +11,19 @@ date: 2021-05-08 21:54:25
 # WSL2+Ubuntu配置Java Hadoop Spark环境
 
 ## 所需文件：
+2023更新，文件已弃用，请自行搜索下载
 
-更新日期为2021/5/8:
+~~更新日期为2021/5/8:~~
 
-[Linux 内核更新包](https://quqi.gblhgk.com/s/460394/DbxQ349Q0Rcb5pi0)
+~~[Linux 内核更新包](https://quqi.gblhgk.com/s/460394/DbxQ349Q0Rcb5pi0)~~
 
-[JDK1.8](https://quqi.gblhgk.com/s/460394/WgMZNC8nrfyrCdZP)
+~~[JDK1.8](https://quqi.gblhgk.com/s/460394/WgMZNC8nrfyrCdZP)~~
 
-[maven3.8.1](https://quqi.gblhgk.com/s/460394/zUnOQG1O4ESVVUz4)
+~~[maven3.8.1](https://quqi.gblhgk.com/s/460394/zUnOQG1O4ESVVUz4)~~
 
-[hadoop3.3.0](https://quqi.gblhgk.com/s/460394/8k64QDcyPtVZNkee)
+~~[hadoop3.3.0](https://quqi.gblhgk.com/s/460394/8k64QDcyPtVZNkee)~~
 
-[spark3.1.1](https://quqi.com/s/460394/Dvia7af9uUsykbjN)
+~~[spark3.1.1](https://quqi.com/s/460394/Dvia7af9uUsykbjN)~~
 
 ## WSL？WSL2？
 
