@@ -1,10 +1,9 @@
 ---
-categories:
-  - MLorDL
-date: 2023-11-27 14:20:38
-id: 
-tags: 
 title: KL散度
+categories:
+  - - MLorDL
+date: 2023-11-27 14:20:38
+comments: true
 updated: 2023-11-27 14:20:38
 ---
 ## KL 散度简介
