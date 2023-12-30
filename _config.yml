@@ -7,9 +7,12 @@ subtitle: ''
 description: ''
 keywords:
 author: Howie Wu
-language: zh-CN
+language: 
+  - zh-CN
+  - en
 timezone: 'Asia/Shanghai'
-
+favicon: /img/favicon.png
+avatar: https://img.wush.cc/202309171523177.png
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://www.iswsh.com
@@ -127,8 +130,8 @@ neat_js:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: fluid
-# theme: stellar
+# theme: fluid
+theme: stellar
 # theme: cactus
 
 # 自动移至分类文件夹
