@@ -134,7 +134,7 @@ comments:
     js: https://unpkg.com/@waline/client@2.14.1/dist/waline.js
     css: https://unpkg.com/@waline/client@2.14.1/dist/waline.css
     # Waline server address url, you should set this to your own link
-    serverURL: https://waline-tawny-chi.vercel.app
+    serverURL:
     # If false, comment count will only be displayed in post page, not in home page
     commentCount: true
     # Pageviews count, Note: You should not enable both `waline.pageview` and `leancloud_visitors`.
@@ -149,14 +149,14 @@ comments:
       - https://unpkg.com/@waline/emojis@1.1.0/tw-emoji
       - https://unpkg.com/@waline/emojis@1.1.0/bmoji
     # 设置自己的图床服务，替换默认的 Base 64 编码嵌入（有体积大小限制），在评论中上传图片更加方便
-    imageUploader:
+    # imageUploader:
       # 适配了兰空图床V1、V2版本
       # 以兰空图床V1为例，下列填写内容为：
-      fileName: file
-      tokenName: Authorization
-      api: https://image.wush.cc/api/v1/upload
-      token: 1|cJ0ExCZOa98RIvI7qyF5PaOFEy2wNYkRf3Us8hK3
-      resp: img.wush.cc
+      # fileName: file
+      # tokenName: Authorization
+      # api: https://image.wush.cc/api/v1/upload
+      # token: B1|cJ0ExCZOa98RIvI7qyF5PaOFEy2wNYkRf3Us8hK3
+      # resp: data.links.url
       # 以兰空图床V2为例，下列填写内容为：
       # fileName: image
       # tokenName: token
