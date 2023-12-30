@@ -20,8 +20,8 @@ sidebar:
     title: '[config.title](/)' # you can set html tag like: '[<img no-lazy height="32px" src="xxx"/>](/)'
   menu:
     post: '[btn.blog](/)'
-    # wiki: '[btn.wiki](/wiki/)'
-    # friends: '[友链](/friends/)'
+    wiki: '[btn.wiki](/wiki/)'
+    friends: '[友链](/friends/)'
     about: '[关于](/about/)'
   # Sidebar widgets
   widgets:
@@ -109,8 +109,8 @@ comments:
   # https://giscus.app/zh-CN
   giscus:
     data-repo: how1ewu/blog-giscus # [在此输入仓库]
-    data-repo-id: R_kgDOIv84hQ # [在此输入仓库 ID]
-    data-category: General # [在此输入分类名]
+    data-repo-id: R_kgDOIv84hQ# [在此输入仓库 ID]
+    data-category: General# [在此输入分类名]
     data-category-id: DIC_kwDOIv84hc4CTf9f
     data-mapping: og:title
     data-strict: 0
