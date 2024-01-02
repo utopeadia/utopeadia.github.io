@@ -398,7 +398,7 @@ default:
   cover: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.9/cover/76b86c0226ffd.svg
   image: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.9/image/2659360.svg
   project: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.9/image/2779789.png
-  banner: https://img.wush.cc/202309171556714.png
+  banner: https://img.wush.cc/202309171556714.png?imageView2/0/format/webp/q/80
 
 api_host:
   ghapi: https://api.github.com

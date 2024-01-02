@@ -462,7 +462,7 @@ footer:
 index:
   # 首页 Banner 头图，可以是相对路径或绝对路径，以下相同
   # Path of Banner image, can be a relative path or an absolute path, the same on other pages
-  banner_img: https://img.wush.cc/202309091131378.jpg
+  banner_img: https://img.wush.cc/202309091131378.jpg?imageView2/0/format/webp/q/80
 
   # 头图高度，屏幕百分比
   # Height ratio of banner image
@@ -959,7 +959,7 @@ about:
   banner_img: https://s2.loli.net/2023/04/08/sKTVDte69w5PzpE.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
-  avatar: https://img.wush.cc/202381318%E5%8D%A1%E9%80%9A%E5%BD%A2%E8%B1%A1%E7%85%A7.png
+  avatar: https://img.wush.cc/202381318%E5%8D%A1%E9%80%9A%E5%BD%A2%E8%B1%A1%E7%85%A7.png?imageView2/0/format/webp/q/80
   name: "Howie Wu"
   intro: "这是一个用于记录Howie学习的小站，这个站很小,里面记录了一个菜鸟程序员（or算法工程师？）的成长历程。加油！"
   # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，`class` 代表图标的 css class，添加 `qrcode` 后，图标不再是链接而是悬浮二维码
