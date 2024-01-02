@@ -229,6 +229,26 @@ tag_plugins:
 
       
 
+
+######## JS Plugins ########
+plugins:
+  ## required plugins ##
+  # jquery
+  jquery: https://gcore.jsdelivr.net/npm/jquery@3.6.2/dist/jquery.min.js
+
+  # stellar api
+  stellar:
+    sites: /js/plugins/sites.js
+    friends: /js/plugins/friends.js
+    ghinfo: /js/plugins/ghinfo.js
+    timeline: /js/plugins/timeline.js
+    linkcard: /js/plugins/linkcard.js
+    fcircle: /js/plugins/fcircle.js
+    weibo: /js/plugins/weibo.js
+    memos: /js/plugins/memos.js
+
+  marked: https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js
+
   ## optional plugins ##
   # preload
   preload:
@@ -269,6 +289,14 @@ tag_plugins:
     enable: true
     css: https://unpkg.com/swiper@10.3/swiper-bundle.min.css
     js: https://unpkg.com/swiper@10.3/swiper-bundle.min.js
+
+
+  # 赫蹏 (Heti) - 专为中文网页内容设计的排版样式增强
+  # https://github.com/sivan/heti
+  heti:
+    enable: false # 此插件会和代码块冲突，仅适用于纯中文博主。
+    css: https://unpkg.com/heti@0.9.2/umd/heti.min.css
+    js: https://unpkg.com/heti@0.9.2/umd/heti-addon.min.js
 
   # MathJax
   # 需在Markdown文件开头加入mathjax: true

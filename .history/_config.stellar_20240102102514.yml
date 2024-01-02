@@ -1,3 +1,4 @@
+
 ######## Sidebar ########
 sidebar:
   logo:
@@ -27,6 +28,15 @@ sidebar:
     # 其它 layout:page 的页面
     page: toc, search # for custom pages using 'layout:page'
 
+######## Index ########
+post-index: # 近期发布 分类 标签 归档 and ...
+  # '朋友文章': /friends/rss/
+
+
+######## Main ########
+breadcrumb:
+  home: home # config.title / config.author / home or custom content
+
 ######## Article ########
 article:
   # 如果没有指定封面，是否根据 tags 作为关键词搜索封面图片？
@@ -41,7 +51,7 @@ article:
   # 文章许可协议
   license: '本文采用 [署名-非商业性使用-相同方式共享 4.0 国际](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。'
   # 分享
-  share: [wechat, weibo, email, link]
+  share: # [wechat, weibo, email, link]
   # 相关文章，需要安装插件 (for layout: post)
   # npm i hexo-related-popular-posts
   related_posts:
@@ -59,14 +69,35 @@ search:
 
 ######## Comments ########
 comments:
-  service: giscus # beaudar, utterances, giscus, twikoo, waline, artalk
+  service: waline # beaudar, utterances, giscus, twikoo, waline, artalk
+  # beaudar
+  # https://beaudar.lipk.org/
+  beaudar:
+    repo: xxx/xxx
+    issue-term: pathname
+    issue-number:
+    theme: preferred-color-scheme
+    label:
+    input-position: top # top/bottom 评论框位置
+    comment-order: desc # desc 排序
+    keep-theme: # true/false
+    loading: false
+    branch: main
+  # utterances
+  # https://utteranc.es/
+  utterances:
+    repo: xxx/xxx
+    issue-term: pathname
+    issue-number:
+    theme: preferred-color-scheme
+    label:
   # giscus
   # https://giscus.app/zh-CN
   giscus:
-    data-repo: how1ewu/blogComment # [在此输入仓库]
-    data-repo-id: R_kgDOK_D5qw # [在此输入仓库 ID]
-    data-category: Announcements # [在此输入分类名]
-    data-category-id: DIC_kwDOK_D5q84CcFu0
+    data-repo: how1ewu/blog-giscus # [在此输入仓库]
+    data-repo-id: R_kgDOIv84hQ # [在此输入仓库 ID]
+    data-category: General # [在此输入分类名]
+    data-category-id: DIC_kwDOIv84hc4CTf9f
     data-mapping: og:title
     data-strict: 0
     data-reactions-enabled: 1
@@ -76,6 +107,13 @@ comments:
     data-lang: zh-CN
     data-loading: lazy
     crossorigin: anonymous
+
+  # Twikoo
+  # https://twikoo.js.org/
+  twikoo:
+    js: https://gcore.jsdelivr.net/npm/twikoo@1.6.8/dist/twikoo.all.min.js # 建议锁定版本
+    envId: https://xxx # vercel函数
+
   # Waline
   # https://waline.js.org/
   waline:
@@ -170,7 +208,7 @@ tag_plugins:
     border: true # true / false
   # {% checkbox %}
   checkbox:
-    interactive: true # enable interactive for user
+    interactive: false # enable interactive for user
   # {% quot %}
   quot:
     default: # 可以自行配置多种图标方案
@@ -229,6 +267,26 @@ tag_plugins:
 
       
 
+
+######## JS Plugins ########
+plugins:
+  ## required plugins ##
+  # jquery
+  jquery: https://gcore.jsdelivr.net/npm/jquery@3.6.2/dist/jquery.min.js
+
+  # stellar api
+  stellar:
+    sites: /js/plugins/sites.js
+    friends: /js/plugins/friends.js
+    ghinfo: /js/plugins/ghinfo.js
+    timeline: /js/plugins/timeline.js
+    linkcard: /js/plugins/linkcard.js
+    fcircle: /js/plugins/fcircle.js
+    weibo: /js/plugins/weibo.js
+    memos: /js/plugins/memos.js
+
+  marked: https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js
+
   ## optional plugins ##
   # preload
   preload:
@@ -270,6 +328,14 @@ tag_plugins:
     css: https://unpkg.com/swiper@10.3/swiper-bundle.min.css
     js: https://unpkg.com/swiper@10.3/swiper-bundle.min.js
 
+
+  # 赫蹏 (Heti) - 专为中文网页内容设计的排版样式增强
+  # https://github.com/sivan/heti
+  heti:
+    enable: false # 此插件会和代码块冲突，仅适用于纯中文博主。
+    css: https://unpkg.com/heti@0.9.2/umd/heti.min.css
+    js: https://unpkg.com/heti@0.9.2/umd/heti-addon.min.js
+
   # MathJax
   # 需在Markdown文件开头加入mathjax: true
   # 推荐使用Pandoc: npm uninstall hexo-renderer-marked --save & npm install hexo-renderer-pandoc --save
@@ -297,8 +363,82 @@ tag_plugins:
   #   B -->|option 2| C(Section C)
   # ```
   mermaid:
-    enable: true
+    enable: false
     # js: https://unpkg.com/mermaid@9.0.0/dist/mermaid.min.js
     js: https://cdn.jsdelivr.net/npm/mermaid@v9/dist/mermaid.min.js
     # Available themes: default | dark | forest | neutral
     theme: neutral
+
+  # 代码块复制按钮
+  copycode:
+    enable: true
+    js: /js/plugins/copycode.js
+    default_text: 'Copy'
+    success_text: 'Copied'
+  
+  # AI 摘要
+  # https://github.com/zhheo/Post-Abstract-AI
+  tianli_gpt:
+    enable: false
+    field: post # all, post, wiki
+    api: 5Q5mpqRK5DkwT1X9Gi5e # tianli_gpt key
+    typingAnimate: true # 打字机动画 
+
+style:
+  darkmode: auto # auto / always / false
+  smooth_scroll: false # true / false 开启时如果目录过长可能无法准确定位
+  font-size:
+    root: 16px
+    body: .9375rem # 15px
+    code: 85% # 14px
+    codeblock: 0.8125rem # 13px
+  font-family:
+    logo: 'system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
+    body: 'system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
+    code: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
+    codeblock: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
+  text-align: left
+  border-radius:
+    card: 12px
+    block: 12px
+    bar: 6px
+    image: 6px
+  color:
+    # 动态颜色（会根据明暗主题重设明度值，只用关心色相和饱和度即可）
+    background: 'hsl(212 16% 98%)' # 浅色背景颜色
+    block: 'hsl(212 8% 95%)' # 块背景颜色
+    code: 'hsl(14 100% 48%)' # 行内代码颜色
+    text: 'hsl(0 0% 20%)' # 文本颜色
+    # 主题色配置（不会根据明暗动态调整，请设置为通用的颜色）
+    theme: 'hsl(192 98% 55%)' # 主题色
+    accent: 'hsl(14 100% 57%)' # 强调色
+    link: 'hsl(207 90% 54%)' # 超链接颜色
+    button: 'hsl(192 98% 55%)' # 按钮颜色
+    hover: 'hsl(14 100% 57%)' # 按钮高亮颜色
+  link:
+    underline: true # true / false
+  animated_avatar:
+    animate: auto # auto, always
+    background: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.9/avatar/round/rainbow64@3x.webp
+  codeblock:
+    scrollbar: 4px
+    highlightjs_theme: https://gcore.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/atom-one-dark.min.css
+  loading:
+    loading: 正在加载
+    error: 加载失败，请稍后重试。
+  gradient: # https://webgradients.com/
+    start: 'linear-gradient(to right, hsl(215, 95%, 64%), hsl(195, 95%, 60%), hsl(165, 95%, 56%), hsl(165, 95%, 56%), hsl(195 95% 60%), hsl(215, 95%, 64%))'
+    search: 'linear-gradient(to right, #04F3FF, #08FFC6, #DDF730, #FFBD19, #FF1FE0, #C418FF, #04F3FF)'
+
+default:
+  avatar: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.9/avatar/round/3442075.svg
+  link: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.9/link/8f277b4ee0ecd.svg
+  cover: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.9/cover/76b86c0226ffd.svg
+  image: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.9/image/2659360.svg
+  project: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.9/image/2779789.png
+  banner: https://img.wush.cc/202309171556714.png
+
+api_host:
+  ghapi: https://api.github.com
+  ghraw: https://raw.githubusercontent.com
+  gist: https://gist.github.com
