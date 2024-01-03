@@ -9,10 +9,10 @@
     "server": "hexo server"
   },
   "hexo": {
-    "version": "7.0.0-rc1"
+    "version": "7.0.0"
   },
   "dependencies": {
-    "hexo": "^7.0.0-rc2",
+    "hexo": "^7.0.0",
     "hexo-ai-excerpt": "^1.1.1",
     "hexo-auto-category": "^0.2.2",
     "hexo-baidu-url-submit": "^0.0.6",
