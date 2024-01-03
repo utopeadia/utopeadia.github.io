@@ -25,6 +25,14 @@ jobs:
           key: ${{ runner.OS }}-npm-cache
           restore-keys: |
             ${{ runner.OS }}-npm-cache
+      - name: Pull submodule changes
+        run: |
+          git pull --recurse-submodules
+          git submodule update --remote
+      - name: Push changes
+        uses: ad-m/github-push-action@main
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
       - name: Install Dependencies
         run: npm install
       - name: Build
