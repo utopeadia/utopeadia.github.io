@@ -1,7 +1,6 @@
 # Hexo Configuration
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
-
 # Site
 title: Howie's Blog
 subtitle: ''
@@ -14,11 +13,10 @@ language:
 timezone: 'Asia/Shanghai'
 favicon: /img/favicon.png
 avatar: https://img.wush.cc/202309171523177.png?imageView2/0/format/webp/q/80
-
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
-permalink: :year/:month/:day/:title/
+url: https://www.iswsh.com
+permalink: :title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -43,21 +41,23 @@ external_link:
   field: site # Apply to the whole site
   exclude: ''
 filename_case: 0
-render_drafts: false
-post_asset_folder: false
+render_drafts: true
+post_asset_folder: true
 relative_link: false
 future: true
-syntax_highlighter: highlight.js
 highlight:
+  enable: true
   line_number: true
   auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: false
 prismjs:
+  enable: false
   preprocess: true
   line_number: true
   tab_replace: ''
+
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -97,16 +97,6 @@ include:
 exclude:
 ignore:
 
-# Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
-theme: stellar
-
-# Deployment
-## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
-  type: ''
-
 # AI摘要
 aiexcerpt:
   default_enable: true
@@ -119,3 +109,52 @@ aiexcerpt:
     'table', 'pre', 'figure'
   ]
   max_token: 2000
+
+# 自动生成sitemap
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
+# 主动提交百度
+baidu_url_submit:
+  count: 100               # 提交最新的多少个链接
+  host: www.wush.cc    # 在百度站长平台中添加的域名
+  token: aKA39ZcuCPl8dF2T      # 秘钥
+  path: baidu_urls.txt   # 文本文档的地址， 新链接会保存在此文本文档里
+
+# 开启压缩
+neat_enable: true
+neat_html:
+  enable: true
+  exclude:
+neat_css:
+  enable: true
+  exclude:
+    - '**/*.min.css'
+neat_js:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude:
+    - '**/*.min.js'
+    - '**/index.js'
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+# theme: fluid
+theme: stellar
+# theme: cactus
+
+# 自动移至分类文件夹
+auto_category:
+  enable: true
+  multiple: false
+  depth: 
+
+# Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
+
+deploy:
+- type: baidu_url_submitter
