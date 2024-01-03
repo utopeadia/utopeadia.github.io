@@ -108,7 +108,7 @@ aiexcerpt:
   ignoreEl: [
     'table', 'pre', 'figure'
   ]
-  max_token: 2000,
+  max_token: 2000
 
 # 自动生成sitemap
 sitemap:
