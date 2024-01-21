@@ -6,6 +6,7 @@ categories:
   - - MLorDL
 comments: true
 date: 2020-02-27 22:12:45
+katex: true
 ---
 
 ### **一、Perceptron Hypothesis Set**

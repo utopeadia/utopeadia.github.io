@@ -6,6 +6,7 @@ categories:
   - - MLorDL
 comments: true
 date: 2020-03-18 22:13:25
+katex: true
 ---
 
 最近做华为软件精英挑战赛热身赛，给出的demo是使用logistic做的金融风控，比赛要求很严格，如果使用Python 进行训练那么不能使用任何第三方机器学习库，只能使用Python和原生numpy1.17。所以就萌生了写一遍原生logistic回归的想法。

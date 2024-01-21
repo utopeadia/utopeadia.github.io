@@ -5,6 +5,7 @@ categories:
 date: 2023-11-27 14:20:38
 comments: true
 updated: 2023-11-27 14:20:38
+katex: true
 ---
 ## KL 散度简介
 KL 散度（Kullback–Leibler divergence）又称相对熵，是表示一个概率分布相对于另一个概率分布的差异的统计量。
