@@ -70,15 +70,6 @@ comments:
     data-lang: zh-CN
     data-loading: lazy
     crossorigin: anonymous
-  # Artalk
-  # https://artalk.js.org/
-  artalk:
-    css: https://unpkg.com/artalk@2.7/dist/Artalk.css
-    js: https://unpkg.com/artalk@2.7/dist/Artalk.js
-    server: # 后端服务地址
-    placeholder: ''
-    darkMode: auto
-
 
 ######## Footer ########
 footer:
@@ -120,8 +111,6 @@ tag_plugins:
   checkbox:
     interactive: true # enable interactive for user
 
-
-
   ## optional plugins ##
   # preload
   preload:
@@ -139,7 +128,7 @@ tag_plugins:
 
   # https://scrollrevealjs.org/api/reveal.html
   scrollreveal:
-    enable: #true
+    enable: true #true
     js: https://gcore.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js
     distance: 8px
     duration: 500 # ms
