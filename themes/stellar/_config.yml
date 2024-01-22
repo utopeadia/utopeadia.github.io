@@ -1,6 +1,6 @@
 ######## Stellar info ########
 stellar:
-  version: '1.26.1'
+  version: '1.26.2'
   homepage: 'https://xaoxuu.com/wiki/stellar/'
   repo: 'https://github.com/xaoxuu/hexo-theme-stellar'
   cdn_css: # Use cdn links instead of /css/main.css
@@ -351,7 +351,7 @@ tag_plugins:
 plugins:
   ## required plugins ##
   # jquery
-  jquery: https://gcore.jsdelivr.net/npm/jquery@3.6.2/dist/jquery.min.js
+  jquery: https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js
 
   # stellar api
   stellar:
@@ -371,16 +371,15 @@ plugins:
   # preload
   preload:
     enable: true
-    service: flying_pages # instant_page, flying_pages
-    instant_page: https://gcore.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js
-    flying_pages: https://gcore.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js
+    service: flying_pages # flying_pages
+    flying_pages: https://cdn.bootcdn.net/ajax/libs/flying-pages/2.1.2/flying-pages.min.js
 
   # image lazyload
   # https://www.npmjs.com/package/vanilla-lazyload
   lazyload:
     enable: true # [hexo clean && hexo s] is required after changing this value.
-    js: https://gcore.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js
-    transition: blur # blur, fade
+    js: https://cdn.bootcdn.net/ajax/libs/vanilla-lazyload/17.8.4/lazyload.min.js
+    transition: fade # blur, fade
 
   # https://scrollrevealjs.org/api/reveal.html
   scrollreveal:
@@ -395,12 +394,12 @@ plugins:
   # available for {% image xxx %}
   fancybox:
     enable: true
-    js: https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js
-    css: https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css
+    js: https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.22/fancybox/fancybox.umd.min.js
+    css: https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.22/fancybox/fancybox.min.css
     # 可以处理评论区的图片（不支持 iframe 类评论系统）例如：
     # 使用twikoo评论可以写: .tk-content img:not([class*="emo"])
     # 使用waline评论可以写: #waline_container .vcontent img
-    selector: .fancybox img # 多个选择器用英文逗号隔开
+    selector: # 多个选择器用英文逗号隔开
 
   # swiper
   swiper:
@@ -505,7 +504,7 @@ style:
     background: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp
   codeblock:
     scrollbar: 4px
-    highlightjs_theme: https://gcore.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/atom-one-dark.min.css
+    highlightjs_theme: https://gcore.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/atom-one-dark.min.css
   loading:
     loading: 正在加载
     error: 加载失败，请稍后重试。
@@ -516,8 +515,8 @@ style:
     # 可以设置：纯色/渐变色/图片作为背景
     # background: 'linear-gradient(to bottom, #abc3, #abc3)'
     # background: 'linear-gradient(to bottom, #20E2D744, #F9FEA544)'
-    # 在图片上层增加高斯模糊效果（同时附带饱和度增强效果）
     background: 'url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.13/image/sidebar-bg1@small.jpg)'
+    # 在图片上层增加高斯模糊效果（同时附带饱和度增强效果）
     blur: true
   paginator:
     prev: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/arrow/f049bbd4e88ec.svg
