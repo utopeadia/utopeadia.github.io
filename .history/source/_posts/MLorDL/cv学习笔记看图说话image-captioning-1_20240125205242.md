@@ -73,7 +73,7 @@ def generate_vgg16():
     :return：VGG16神经网络
     """
     pass
-if __name__ == '__main__':
+if __name__=='__main__':
     model = generate_vgg16()
     model.summary()
 ```
@@ -176,7 +176,7 @@ def generate_vgg16():
         Dense(1000, activation='softmax')
     ])
     return model
-if __name__ == '__main__':
+if __name__=='__main__':
     model = generate_vgg16()
     model.summary()
 ```
@@ -287,7 +287,7 @@ def extract_features(directory):
         pbar.update(1)
     print("Complete extracting.")
     return features
-if __name__ == '__main__':
+if __name__=='__main__':
     # 提取Flicker8k数据集中所有图像的特征，保存在一个文件中, 大约一小时的时间，最后的文件大小为127M
     # 下载zip文件，解压缩到当前目录的子文件夹Flicker8k_Dataset， 注意上传完成的作业时不要上传这个数据集文件
     directory = './Flicker8k_Dataset'
