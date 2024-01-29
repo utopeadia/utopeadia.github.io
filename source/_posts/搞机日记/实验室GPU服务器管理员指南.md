@@ -2,7 +2,7 @@
 服务器目前拥有两台GPU，分别为:
 GPU0-RTX3090 24G
 GPU1-泰坦 12G
-![](https://img.wush.cc/231216171645-image.png) </br>
+![](https://img.wush.cc/231216171645-image.png?imageView2/0/format/webp/q/80)
 使用前请务必检查服务器负载，因为使用人数较少不进行个人资源限制。 **因管理员太菜，容器出现问题修不了，只能删机重来（甚至删机命令都是百度的），请务必明确自己发出的每一条指令，备份好自己的重要数据，不要当做存储！**
 ```shell
 nvidia-smi
@@ -14,10 +14,10 @@ nvidia-smi
 如有问题，请联系现任**管理员：吴树晖**
 ## 连接方式
 * 公网连接</br>
-
-1、下载[zerotier](https://www.zerotier.com/)，加入网络:52b337794f3cd67b </br>
+1、下载[zerotier](https://www.zerotier.com/)，**不需要注册**，直接下载客户端！加入网络:【联系管理员获取】 </br>
 2、联系管理员同意授权网络</br>
 3、通过 SSH 进行连接，访问192.168.64.100:<管理员授权的端口>利用用户名 (默认为 ubuntu)及密码登录，传输文件不要使用 sftp 直接传数据集或者大文件（线路优化使用了流量转发做优化，线路流量挺贵的，钱包顶不住），公共数据集请使用 wget 等从网络直连下载（也就是先存个网盘或者找到下载链接，然后直接下载到服务器）</br>
+
 --- **下面内容仅供管理员参考记录** ---
 ## 容器部署：
 使用了： [ https://github.com/gezp/docker-ubuntu-desktop ](https://github.com/gezp/docker-ubuntu-desktop) 项目进行部署。
