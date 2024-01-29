@@ -1,7 +1,5 @@
 ---
 title: 实验室GPU服务器使用简要说明
-tags: 
-id: 
 categories:
   - - 搞机日记
 date: 2023-12-12 13:00:31
