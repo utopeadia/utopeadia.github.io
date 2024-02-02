@@ -1,10 +1,10 @@
 ######## Stellar info ########
 stellar:
-  version: '1.26.2'
+  version: '1.26.5'
   homepage: 'https://xaoxuu.com/wiki/stellar/'
   repo: 'https://github.com/xaoxuu/hexo-theme-stellar'
-  cdn_css: # Use cdn links instead of /css/main.css
-  cdn_js: # Use cdn links instead of /js/main.js
+  main_css: /css/main.css
+  main_js: /js/main.js
 
 
 ######## head tags ########
@@ -122,7 +122,7 @@ article:
   # 如果没有指定横幅，是否根据 tags 作为关键词搜索横幅图片？
   auto_banner: false # search from https://source.unsplash.com/
   # 如果没有指定 excerpt 和 description，将自动取多长的内容作为文章摘要？
-  auto_excerpt: 200
+  auto_excerpt: 128
   # 分类颜色
   category_color:
     '探索号': '#f44336'
@@ -294,6 +294,8 @@ tag_plugins:
       suffix: https://bu.dusays.com/2022/10/24/63567d3e0ab55.png
     hashtag:
       prefix: https://bu.dusays.com/2022/10/24/63567d3e07da3.png
+    question:
+      prefix: ph:seal-question-fill
   # {% emoji %}
   emoji:
     default: https://gcore.jsdelivr.net/gh/cdn-x/emoji/qq/${name}.gif
@@ -302,6 +304,9 @@ tag_plugins:
     aru: https://gcore.jsdelivr.net/gh/cdn-x/emoji/aru-l/${name}.gif
     tieba: https://gcore.jsdelivr.net/gh/cdn-x/emoji/tieba/${name}.png
     blobcat: https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/${name}.png
+  icon:
+    # 留空时，图标和文字颜色相同
+    default_color: accent # theme, accent, red, orange, yellow, green, cyan, blue, purple
   # {% image %}
   image:
     fancybox: false # true, false
@@ -313,7 +318,7 @@ tag_plugins:
     max-height: 80vh
   # {% mark %}
   mark:
-    default_color: dark # light, dark, red, orange, yellow, green, cyan, blue, purple, warning, error
+    default_color: yellow # light, dark, red, orange, yellow, green, cyan, blue, purple, warning, error
   # {% hashtag %}
   hashtag:
     default_color: # red, orange, yellow, green, cyan, blue, purple
@@ -470,9 +475,9 @@ style:
   darkmode: auto # auto / always / false
   smooth_scroll: false # true / false 开启时如果目录过长可能无法准确定位
   font-size:
-    root: 16px
-    body: 1rem # 16px 
-    code: 85% # 14px
+    root: 16px # 改这个会影响全局所有文字的字号
+    body: 17px # 影响正文区域的字号，如果改成 px 则不受 root 影响
+    code: 85% # 相较于其所在行的文本大小，建议用百分比
     codeblock: 0.8125rem # 13px
   font-family:
     logo: 'system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
@@ -480,10 +485,12 @@ style:
     code: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
     codeblock: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
   text-align: left
+  prefix:
+    h2: https://api.iconify.design/ci:heading-h2.svg
   border-radius:
     card: 12px
     block: 12px
-    bar: 12px
+    bar: 8px
     image: 6px
   color:
     # 动态颜色（会根据明暗主题重设明度值，只用关心色相和饱和度即可）
@@ -497,8 +504,6 @@ style:
     link: 'hsl(207 90% 54%)' # 超链接颜色
     button: 'hsl(192 98% 55%)' # 按钮颜色
     hover: 'hsl(14 100% 57%)' # 按钮高亮颜色
-  link:
-    underline: true # true / false
   animated_avatar:
     animate: auto # auto, always
     background: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp
@@ -513,15 +518,20 @@ style:
     search: 'linear-gradient(to right, #04F3FF, #08FFC6, #DDF730, #FFBD19, #FF1FE0, #C418FF, #04F3FF)'
   sidebar:
     # 可以设置：纯色/渐变色/图片作为背景
-    # background: 'linear-gradient(to bottom, #abc3, #abc3)'
-    # background: 'linear-gradient(to bottom, #20E2D744, #F9FEA544)'
-    background: 'url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.13/image/sidebar-bg1@small.jpg)'
-    # 在图片上层增加高斯模糊效果（同时附带饱和度增强效果）
-    blur: true
+    # background: var(--sidebar-bg)
+    # background-image: 'linear-gradient(to bottom, var(--sidebar-bg), var(--sidebar-bg))'
+    background-image: url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.13/image/sidebar-bg1@small.jpg)
+    blur-px: 100px
+    blur-bg: var(--alpha60)
   paginator:
     prev: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/arrow/f049bbd4e88ec.svg
     next: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/arrow/064b95430caf4.svg
   error_page: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/404/1c830bfcd517d.svg
+  site:
+    background-image: #'url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.14/image/site-bg1@small.webp)' # 未完全适配，慎用
+    blur-px: 100px
+    blur-bg: var(--alpha75)
+
 
 default:
   avatar: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/3442075.svg
