@@ -20,15 +20,25 @@
   overflow: hidden
 
 .l_body[text-indent] .md-text.content
-  >p
+  // 应用缩进效果
+  p:not([class])
     text-indent: 'calc(%s * 2)' % var(--fsp)
     text-align: justify
+    a
+      text-indent: 0
+  ol,ul
+    margin-left: 0.5em
   h1,h2,h3,h4,h5,h6
     text-align: center
     a.headerlink
       display: none
   h2
     margin: 2em 0 1.5em
+  // 取消缩进效果
+  blockquote, .poetry, .okr, .timeline, li, .article-footer
+    p:not([class])
+      text-indent: 0
+      text-align: convert(hexo-config('style.text-align'))
 
 .md-text
   ul:not(:last-child),
@@ -108,14 +118,18 @@
   margin: auto
   display: block
 
-.md-text li:not([class]) a:not([class]), .md-text p:not([class]) a:not([class])
+li:not([class]) a:not([class])
+p:not([class]) a:not([class])
+table a:not([class])
   position: relative
   text-decoration: none
   trans1 all
   padding: 0 2px
   border-radius: 0
+  color: inherit
   background: linear-gradient(0deg,var(--theme-link),var(--theme-link)) no-repeat left 100%/100% 1px
   &:hover
+    text-decoration: none
     color: var(--theme-link)
     border-radius: 4px
     background: linear-gradient(0deg,var(--theme-link-opa),var(--theme-link-opa)) no-repeat left 100%/100% 100%

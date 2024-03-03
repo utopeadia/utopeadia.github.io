@@ -6,7 +6,7 @@
 
 .article.banner
   .bg+.content
-    min-height: 240px
+    min-height: 224px
     --text-banner: white
     --button-hover-bg: rgba(white, 0.25)
 
@@ -17,13 +17,14 @@
   .title
     font-size: $fsh1
     color: var(--text-banner)
-  .bottom
-    padding: 2rem 1rem
   h1
     line-height: 1.2
-    margin: 0
-  
-.l_body[text-indent] .article.banner .content .bottom
+    margin: 0.25rem 0
+
+.l_body .article.banner .content .bottom.only-title .title
+  padding: 0.75rem 0
+
+.l_body[text-indent] .article.banner .content .bottom.only-title
   justify-content: center
   
 
@@ -31,7 +32,7 @@
 .article.banner
   .bg+.content
     trans1 all
-    --blur-bg: rgba(black, 0.1)
+    --blur-bg: rgba(black, 0)
     --blur-px: 0px
     --blur-sat: 100%
     background: var(--blur-bg)
@@ -47,12 +48,10 @@
 
 .article.banner
   --button-hover-bg: rgba(black, 0.05)
-set_darkmode()
-  .article.banner
+  ondark()
     --button-hover-bg: rgba(white, 0.15)
-
-if hexo-config('style.darkmode') == 'auto'
-  @media (prefers-color-scheme: dark)
-    set_darkmode()
-if hexo-config('style.darkmode') == 'always'
-  set_darkmode()
+  if theme(dark)
+    ondark()
+  else if theme(auto)
+    @media (prefers-color-scheme: dark)
+      ondark()
