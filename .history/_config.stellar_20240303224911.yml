@@ -4,6 +4,7 @@ logo:
   title: '[{config.title}](/)' # you can set html tag like: '[<img no-lazy height="32px" src="xxx"/>](/)'
   subtitle: '欢迎访问 | Welcome!' # '文字1 | 文字2' (鼠标放上去会切换到文字2)
 
+
 ######## Article ########
 article:
   # 分享
