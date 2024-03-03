@@ -1,5 +1,5 @@
 timeline:
-  layout: timeline
+  layout: memos
   title: 近期动态
   api: https://memos.wush.cc/api/v1/memo?creatorId=1&limit=10
   type: memos
