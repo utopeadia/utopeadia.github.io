@@ -22,14 +22,14 @@ site_tree:
   author: 
     base_dir: author # 只影响自动生成的页面路径
     menu_id: post
-    leftbar: recent, tagcloud
-    rightbar: [timeline]
+    leftbar: recent
+    rightbar: [timeline, tagcloud]
   # 错误页配置
   error_page:
     menu_id: post
     '404': '/404.html'
-    leftbar: recent, tagcloud
-    rightbar: [timeline]
+    leftbar: recent
+    rightbar: [timeline, tagcloud]
 
 ######## Article ########
 article:

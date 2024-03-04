@@ -29,7 +29,7 @@ site_tree:
     menu_id: post
     '404': '/404.html'
     leftbar: recent, tagcloud
-    rightbar: [timeline]
+    rightbar: [timeline, tagcloud]
 
 ######## Article ########
 article:

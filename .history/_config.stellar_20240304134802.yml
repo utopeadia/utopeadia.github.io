@@ -28,8 +28,8 @@ site_tree:
   error_page:
     menu_id: post
     '404': '/404.html'
-    leftbar: recent, tagcloud
-    rightbar: [timeline]
+    leftbar: recent
+    rightbar: [timeline, tagcloud]
 
 ######## Article ########
 article:
