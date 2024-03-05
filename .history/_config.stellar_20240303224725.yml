@@ -57,7 +57,7 @@ comments:
   # giscus
   # https://giscus.app/zh-CN
   giscus:
-    data-repo: how1ewu/blogComment # [在此输入仓库]
+    data-repo: utopeadia/blogComment # [在此输入仓库]
     data-repo-id: R_kgDOK_D5qw # [在此输入仓库 ID]
     data-category: Announcements # [在此输入分类名]
     data-category-id: DIC_kwDOK_D5q84CcFu0
@@ -76,7 +76,7 @@ footer:
   social:
     github:
       icon: '<img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.9/social/08a41b181ce68.svg"/>'
-      url: https://github.com/how1ewu
+      url: https://github.com/utopeadia
     # music:
     #   icon: '<img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.9/social/3845874.svg"/>'
     #   url: /
@@ -99,7 +99,7 @@ footer:
     #   - '[留言板](/)'
     '更多':
       - '[关于本站](/about)'
-      - '[GitHub](https://github.com/how1ewu)'
+      - '[GitHub](https://github.com/utopeadia)'
   content: | # 支持 Markdown 格式
     本站由 [{author.name}](/) 使用 [${theme.name} ${theme.version}](${theme.tree}) 主题创建。
     本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。

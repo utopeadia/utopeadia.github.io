@@ -874,7 +874,7 @@ cusdis:
 # Based on GitHub Discussions, similar to Utterances
 # See: https://giscus.app/
 giscus:
-  repo: utopeadia/blog-giscus
+  repo: how1ewu/blog-giscus
   repo-id: R_kgDOIv84hQ
   category: General
   category-id: DIC_kwDOIv84hc4CTf9f
@@ -966,7 +966,7 @@ about:
   # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，`class` 代表图标的 css class，添加 `qrcode` 后，图标不再是链接而是悬浮二维码
   # More icons can be found from https://hexo.fluid-dev.com/docs/en/icon/  `class` is the css class of the icon. If adding `qrcode`, The icon is no longer a link, but a hovering QR code
   icons:
-    - { class: "iconfont icon-github-fill", link: "https://github.com/utopeadia", tip: "GitHub" }
+    - { class: "iconfont icon-github-fill", link: "https://github.com/how1ewu", tip: "GitHub" }
   #  - { class: "iconfont icon-douban-fill", link: "https://douban.com", tip: "豆瓣" }
   #  - { class: "iconfont icon-wechat-fill", qrcode: "/img/favicon.png" }
 
@@ -1013,7 +1013,7 @@ links:
     - {
       title: "Howie GitHub",
       intro: "Howie的GitHub首页",
-      link: "https://github.com/utopeadia",
+      link: "https://github.com/how1ewu",
       avatar: "https://img.wush.cc/202309091132617.png?imageView2/0/format/webp/q/80"
     }
     - {
