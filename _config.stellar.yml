@@ -55,7 +55,7 @@ comments:
   # giscus
   # https://giscus.app/zh-CN
   giscus:
-    data-repo: how1ewu/blogComment # [在此输入仓库]
+    data-repo: utopeadia/blogComment # [在此输入仓库]
     data-repo-id: R_kgDOK_D5qw # [在此输入仓库 ID]
     data-category: Announcements # [在此输入分类名]
     data-category-id: DIC_kwDOK_D5q84CcFu0
