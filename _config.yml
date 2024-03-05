@@ -15,7 +15,7 @@ favicon: /img/favicon.png
 avatar: https://img.wush.cc/202309171523177.png?imageView2/0/format/webp/q/80
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://this.iswsh.com
+url: https://this.utopeadia.com
 permalink: :title/
 permalink_defaults:
 pretty_urls:
