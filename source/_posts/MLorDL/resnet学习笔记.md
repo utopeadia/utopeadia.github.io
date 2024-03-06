@@ -88,7 +88,9 @@ $$
 x_L = x_l+B \sum _{i=Dl}^{L-1}F(x_i,CW_i)
 $$
 
-利用链式规则，可以求得反向过程的梯度： ![截屏2021-10-31 下午8.35.19](https://img.wush.cc/jie-ping20211031-xia-wu83519.png?imageView2/0/format/webp/q/80)
+利用链式规则，可以求得反向过程的梯度：
+
+ ![截屏2021-10-31 下午8.35.19](https://img.wush.cc/jie-ping20211031-xia-wu83519.png?imageView2/0/format/webp/q/80)
 式子的第一个因子$\frac{\partial loss}{\partial x_l}$表示的损失函数到达$L$的梯度，小括号中的1表明短路机制可以无损地传播梯度，而另外一项残差梯度则需要经过带有weights的层，梯度不是直接传递过来的。残差梯度不会那么巧全为-1，而且就算其比较小，有1的存在也不会导致梯度消失。所以残差学习会更容易。要注意上面的推导并不是严格的证明。
 
 ### ResNet的网络结构
