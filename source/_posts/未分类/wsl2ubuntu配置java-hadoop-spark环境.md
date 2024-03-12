@@ -3,7 +3,7 @@ title: WSL2+Ubuntu配置Java Hadoop Spark环境
 tags: []
 id: '78'
 categories:
-  - - 未分类
+  - Java
 comments: true
 date: 2021-05-08 21:54:25
 ---
