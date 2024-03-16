@@ -12,13 +12,9 @@ tags:
   - 计算机视觉
 categories:
   - ML&DL
-permalink: /post/cv-learning-notes-to-read-pictures-and-talkcaptioning1-z15xc5t.html
 comments: true
 toc: true
 ---
-
-
-
 ## Background
 
 分别使用CNN和LSTM对图像和文字进行处理：
@@ -65,7 +61,7 @@ Framing Image Description as a Ranking Task:Data, Models, and Evaluation Metrics
 * Flickr8K
 * 8000个图像，每幅图5个标题，描述图像里面的事物和事件
 * 不包含著名人物和地点
-* <span style="font-weight: bold;" class="bold">分为3个集合:6000个训练图像，1000个开发图像，1000个测试图像</span>
+* `<span style="font-weight: bold;" class="bold">`分为3个集合:6000个训练图像，1000个开发图像，1000个测试图像
 
 ### 数据示例
 
@@ -80,7 +76,7 @@ Framing Image Description as a Ranking Task:Data, Models, and Evaluation Metrics
 ### 目标
 
 自动生成英文标题，与人类生成的标题越相似越好。
-衡量两个句子的<span style="font-weight: bold;" class="mark">相似度（BLEU）</span>,一个句子与其他几个句子的相似度<span style="font-weight: bold;" class="mark">（Corpus BLEU）</span>
+衡量两个句子的`<span style="font-weight: bold;" class="mark">`相似度（BLEU）,一个句子与其他几个句子的相似度`<span style="font-weight: bold;" class="mark">`（Corpus BLEU）
 
 * BLEU:Bilingual Evaluation Understudy(双语评估替换)。
 * BLEU是一个比较候选文本翻译与其他一个或多个参考翻译的评价分数。尽管他是为翻译工作而开发的，但是仍然可以用于评估自动生成的文本质量

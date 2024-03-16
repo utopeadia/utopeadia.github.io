@@ -12,14 +12,10 @@ tags:
   - 分类
 categories:
   - ML&DL
-permalink: /post/perceptronlearningalgorithm-pla-z19odxp.html
 comments: true
 toc: true
 ---
-
-
-
-### <span style="font-weight: bold;" class="bold">一、Perceptron Hypothesis Set</span>
+### `<span style="font-weight: bold;" class="bold">`一、Perceptron Hypothesis Set
 
 例子：
 银行要决定是否给使用者发信用卡。
@@ -32,7 +28,7 @@ toc: true
 那么，我们所说的Perceptron，实际上上就是一条直线，我们称之为linear(binary) classifiers（线性分类器）。在更高维度中，同样支持。
 同时，需要注意的是，这里所说的linear(binary) classifiers是用简单的感知器模型建立的，线性分类问题还可以使用logistic regression来解决，后面将会介绍。
 
-### <span style="font-weight: bold;" class="bold">二、Perceptron Learning Algorithm(PLA)</span>
+### `<span style="font-weight: bold;" class="bold">`二、Perceptron Learning Algorithm(PLA)
 
 根据上一部分的介绍，我们已经知道了hypothesis set由许多条直线构成。我们希望将所有的正类和负类完全分开，也就是找到最好的g，使$g\approx f$。
 但是这样是很困难的，因为我们的f是未知的，我一我们可以将问题转化为找到最好的f。
@@ -69,7 +65,7 @@ toc: true
 * 这种方法一定会停下来吗？
 * 假设停下来了,$g$是否等于$f$？
 
-### <span style="font-weight: bold;" class="bold">三、Guarantee of PLA</span>
+### `<span style="font-weight: bold;" class="bold">`三、Guarantee of PLA
 
 PLA什么时候会停下来？根据PLA的终止条件是，找到一条直线，能将所有平面上的点都分类正确，那么PLA就停止了。要达到这个终止条件，就必须保证D是线性可分（linear separable）。如果是非线性可分的，那么，PLA就不会停止。
 ![这里写图片描述](https://img.wush.cc/16311025993205.png?imageView2/0/format/webp/q/80)
@@ -91,7 +87,7 @@ $$
 ![这里写图片描述](https://img.wush.cc/16311025993312.png?imageView2/0/format/webp/q/80)
 上述不等式左边其实是$w_T$与$w_f$夹角的余弦值，随着T增大，该余弦值越来越接近1，即$w_T$与$w_f$越来越接近。同时，需要注意的是，$\sqrt T\cdot constant\leq 1$，也就是说，迭代次数T是有上界的。根据以上证明，我们最终得到的结论是：$w_{t+1}$与$w_f$的是随着迭代次数增加，逐渐接近的。而且，PLA最终会停下来（因为T有上界），实现对线性可分的数据集完全分类。
 
-### <span style="font-weight: bold;" class="bold">四、Non-Separable Data</span>
+### `<span style="font-weight: bold;" class="bold">`四、Non-Separable Data
 
 上一部分，我们证明了线性可分的情况下，PLA是可以停下来并正确分类的，但对于非线性可分的情况，$w_f$实际上并不存在，那么之前的推导并不成立，PLA不一定会停下来。所以，PLA虽然实现简单，但也有缺点：
 ![这里写图片描述](https://img.wush.cc/16311025993334.png?imageView2/0/format/webp/q/80)
@@ -104,9 +100,9 @@ $$
 ![这里写图片描述](https://img.wush.cc/16311025993407.png?imageView2/0/format/webp/q/80)
 如何判断数据集D是不是线性可分？对于二维数据来说，通常还是通过肉眼观察来判断的。一般情况下，Pocket Algorithm要比PLA速度慢一些。
 
-### <span style="font-weight: bold;" class="bold">五、总结</span>
+### `<span style="font-weight: bold;" class="bold">`五、总结
 
 本节课主要介绍了线性感知机模型，以及解决这类感知机分类问题的简单算法：PLA。我们详细证明了对于线性可分问题，PLA可以停下来并实现完全正确分类。对于不是线性可分的问题，可以使用PLA的修正算法Pocket Algorithm来解决。
-*<span style="font-weight: bold;" class="bold">注明：</span>* 
+*`<span style="font-weight: bold;" class="bold">`注明：*
 笔记改编自红色石头博客
 文章中所有的图片均来自台湾大学林轩田《机器学习基石》课程。

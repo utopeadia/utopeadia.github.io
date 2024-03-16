@@ -13,13 +13,9 @@ tags:
   - 概率分布
 categories:
   - ML&DL
-permalink: /post/kl-scatter-37ghz.html
 comments: true
 toc: true
 ---
-
-
-
 ## KL 散度简介
 
 KL 散度（Kullback–Leibler divergence）又称相对熵，是表示一个概率分布相对于另一个概率分布的差异的统计量。

@@ -14,13 +14,9 @@ tags:
   - wsl2
 categories:
   - 开发笔记
-permalink: /post/compiled-jdk-16aq5a.html
 comments: true
 toc: true
 ---
-
-
-
 ## 编译环境介绍
 
 本次编译尝试在WSL2->下进行， 母机配置如下：
@@ -46,7 +42,7 @@ sudo apt install build-essential
 ```
 
 ![image-20210702210315895](https://img.wush.cc/16311013184974.png?imageView2/0/format/webp/q/80)
-<span style="font-weight: bold;" class="bold">请务必仔细查阅编译文档doc/building.html</span>
+`<span style="font-weight: bold;" class="bold">`请务必仔细查阅编译文档doc/building.html
 可以看到openjdk编译所需要的外部依赖库
 ![image-20210702210931823](https://img.wush.cc/16311013185002.png?imageView2/0/format/webp/q/80)
 ![image-20210702211102787](https://img.wush.cc/16311013185027.png?imageView2/0/format/webp/q/80)
@@ -96,6 +92,6 @@ bash configure --enable-debug
 ![image-20210702220038754](https://img.wush.cc/16311013185077.png?imageView2/0/format/webp/q/80)
 编译成功后会收到提示，输出相关信息
 ![image-20210702220236672](https://img.wush.cc/16311013185100.png?imageView2/0/format/webp/q/80)
-进入<span style="font-weight: bold;" class="bold">/build/配置名</span>目录。<span style="font-weight: bold;" class="bold">​</span>使用<span style="font-weight: bold;" class="bold">make images</span>命令进行编译
+进入`<span style="font-weight: bold;" class="bold">`/build/配置名目录。`<span style="font-weight: bold;" class="bold">`使用`<span style="font-weight: bold;" class="bold">`make images命令进行编译
 编译过程可能比较吃力。
 ![image-20210702221858891](https://img.wush.cc/16311013185124.png?imageView2/0/format/webp/q/80)

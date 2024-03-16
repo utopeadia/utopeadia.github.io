@@ -16,14 +16,9 @@ tags:
   - 卷积神经网络
 categories:
   - ML&DL
-permalink: >-
-  /post/cv-learning-notes-to-read-pictures-and-talk-about-imagecaptiong2-1cxtak.html
 comments: true
 toc: true
 ---
-
-
-
 ## 实现load_img_as_np_array
 
 ```python
@@ -55,8 +50,8 @@ return np.asarray(img, dtype=keras.floatx())
 def load_vgg16_model():
     """从当前目录下面的 vgg16_exported.json 和 vgg16_exported.h5 两个文件中导入 VGG16 网络并返回创建的网络模型
     # Returns
-​        创建的网络模型 model
-​    """
+        创建的网络模型 model
+    """
 ```
 
 * json存储网络结构
@@ -114,8 +109,8 @@ model.layers.pop()
     model = Model(inputs=model.inputs, outputs=model.layers[-1].output)
 ```
 
-​ Inputs是原来的网络输出
-​ Outputs输出的是新的网络
+ Inputs是原来的网络输出
+ Outputs输出的是新的网络
 
 * 使用数据字典来存储，进行批处理。
 * 神经网络的输入纬度是四维，需要使用在最前面加一个纬度。
@@ -152,13 +147,13 @@ id = os.path.splitext(fn)[0]
 ![截屏2020-02-26下午12.48.41](https://img.wush.cc/16311026794540.png?imageView2/0/format/webp/q/80)
 文本标记实用类。
 该类允许使用两种方法向量化一个文本语料库： 将每个文本转化为一个整数序列（每个整数都是词典中标记的索引）； 或者将其转化为一个向量，其中每个标记的系数可以是二进制值、词频、TF-IDF权重等。
-<span style="font-weight: bold;" class="bold">参数</span>
+`<span style="font-weight: bold;" class="bold">`参数
 
 * **num_words**: 需要保留的最大词数，基于词频。只有最常出现的 `num_words` 词会被保留。
 * **filters**: 一个字符串，其中每个元素是一个将从文本中过滤掉的字符。默认值是所有标点符号，加上制表符和换行符，减去 `'` 字符。
-* <span style="font-weight: bold;" class="bold">lower</span>: 布尔值。是否将文本转换为小写。
-* <span style="font-weight: bold;" class="bold">split</span>: 字符串。按该字符串切割文本。
-* <span style="font-weight: bold;" class="bold">char_level</span>: 如果为 True，则每个字符都将被视为标记。
+* `<span style="font-weight: bold;" class="bold">`lower: 布尔值。是否将文本转换为小写。
+* `<span style="font-weight: bold;" class="bold">`split: 字符串。按该字符串切割文本。
+* `<span style="font-weight: bold;" class="bold">`char_level: 如果为 True，则每个字符都将被视为标记。
 * **oov_token**: 如果给出，它将被添加到 word_index 中，并用于在 `text_to_sequence` 调用期间替换词汇表外的单词。
   默认情况下，删除所有标点符号，将文本转换为空格分隔的单词序列（单词可能包含 `'` 字符）。 这些序列然后被分割成标记列表。然后它们将被索引或向量化。
   `0` 是不会被分配给任何单词的保留索引。

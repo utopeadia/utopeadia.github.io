@@ -12,13 +12,9 @@ tags:
   - 线性代数
 categories:
   - ML&DL
-permalink: /post/zoubo-ml-matrix-and-linear-algebra-z2twnw8.html
 comments: true
 toc: true
 ---
-
-
-
 ## 主要内容
 
 * 矩阵
@@ -203,7 +199,7 @@ A是n阶矩阵，若数$\lambda$和n纬非0列向量x满足$Ax=\lambda x$，那�
 设n阶矩阵$A(a_{ij})$的特征值为$\lambda_1,\lambda_2,...,\lambda_n$，则：
 $\lambda_1+\lambda_2+...+\lambda_n=a_{11}+a_{22}+...+a_{nn}$
 $\lambda_1\lambda_2...\lambda_n=A$
-矩阵A主对角线行列式的元素和，称作矩阵A的<span style="font-weight: bold;" class="bold">迹</span>
+矩阵A主对角线行列式的元素和，称作矩阵A的`<span style="font-weight: bold;" class="bold">`迹
 
 ### 不同特征值对应的特征向量
 
@@ -215,10 +211,10 @@ $\lambda_1\lambda_2...\lambda_n=A$
 
 #### 引理
 
-<span style="font-weight: bold;" class="bold">实对称阵的特征值是实数</span>
+`<span style="font-weight: bold;" class="bold">`实对称阵的特征值是实数
 ![截屏2020-03-02下午8.46.58](https://img.wush.cc/16311014148117.png?imageView2/0/format/webp/q/80)
 应用：
-将实数$\lambda$带入方程组$(A-\lambda I)x=0$，该方程组为实系数方程组，因此，<span style="font-weight: bold;" class="bold">实对称阵</span>的特征向量可以取<span style="font-weight: bold;" class="bold">实向量</span>。
+将实数$\lambda$带入方程组$(A-\lambda I)x=0$，该方程组为实系数方程组，因此，`<span style="font-weight: bold;" class="bold">`实对称阵的特征向量可以取`<span style="font-weight: bold;" class="bold">`实向量。
 
 #### 实对称阵的不同特征值的特征向量正交
 
@@ -234,7 +230,7 @@ $\lambda_1\lambda_2...\lambda_n=A$
 对于n阶方阵A，若任意n阶向量x，都有$x^TAx&gt;0$则称A是正定阵。
 若条件变为$x^TAx\ge0$，则A称作半正定阵。
 类似的还有负定阵，半负定阵。
-<span style="font-weight: bold;" class="bold">给定任意</span>​<span style="font-weight: bold;" class="bold">$m\times n$</span>​<span style="font-weight: bold;" class="bold">的矩阵A，证明</span>​<span style="font-weight: bold;" class="bold">$A^TA$</span>​<span style="font-weight: bold;" class="bold">一定是半正定阵。</span>
+`<span style="font-weight: bold;" class="bold">`给定任意`<span style="font-weight: bold;" class="bold">`$m\times n$`<span style="font-weight: bold;" class="bold">`的矩阵A，证明`<span style="font-weight: bold;" class="bold">`$A^TA$`<span style="font-weight: bold;" class="bold">`一定是半正定阵。
 
 #### 正定阵的判定
 

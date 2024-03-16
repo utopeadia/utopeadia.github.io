@@ -14,18 +14,14 @@ tags:
   - transformer
 categories:
   - ML&DL
-permalink: /post/cv-learning-notes-attention-2adwuv.html
 comments: true
 toc: true
 ---
-
-
-
 ## Attention(注意力机制)
 
-* <span style="font-weight: bold;" class="bold">Attention for Image</span>
-* <span style="font-weight: bold;" class="bold">Attention for Machine Translation</span>
-* <span style="font-weight: bold;" class="bold">Self-Attention</span>
+* `<span style="font-weight: bold;" class="bold">`Attention for Image
+* `<span style="font-weight: bold;" class="bold">`Attention for Machine Translation
+* `<span style="font-weight: bold;" class="bold">`Self-Attention
 
 ## 没有image-Attention:看图说话
 
@@ -102,7 +98,7 @@ Encoder 部分变化不大，但是在生成第一个单词的时候，要将注
 
 ### Transformer
 
-<span style="font-weight: bold;" class="bold">时序模型必然存在梯度问题。我们尝试使用非时序类模型来实现时序模型的特点，即捕获相关性。</span>  Transformer是深度学习模型，纵向深度很深。Transformer也是一个Encoder-Decoder模型。 ![](https://img.wush.cc/16311019847758.png?imageView2/0/format/webp/q/80)
+`<span style="font-weight: bold;" class="bold">`时序模型必然存在梯度问题。我们尝试使用非时序类模型来实现时序模型的特点，即捕获相关性。  Transformer是深度学习模型，纵向深度很深。Transformer也是一个Encoder-Decoder模型。 ![](https://img.wush.cc/16311019847758.png?imageView2/0/format/webp/q/80)
 拆分可分为： ![](https://img.wush.cc/16311019847814.png?imageView2/0/format/webp/q/80)
 Feed Forward负责非线性转换，Self-Attention是关键。
 

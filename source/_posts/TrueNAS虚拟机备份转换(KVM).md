@@ -13,13 +13,9 @@ tags:
   - trueNAS
 categories:
   - 搞机日志
-permalink: /post/truenas-virtual-machine-backup-conversion-kvm-zsufjd.html
 comments: true
 toc: true
 ---
-
-
-
 ## 虚拟机导出
 
 TrueNAS Scale虚拟化使用ZVOL存储虚拟机，存储路径为：

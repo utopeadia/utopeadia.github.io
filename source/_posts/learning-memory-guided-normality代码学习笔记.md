@@ -12,13 +12,9 @@ tags:
   - self-attention
 categories:
   - ML&DL
-permalink: /post/learningmemoryguidednormality-code-learning-notes-z2wwgoc.html
 comments: true
 toc: true
 ---
-
-
-
 ## 记忆模块核心
 
 Memory部分的核心在于以下定义Memory类的部分。

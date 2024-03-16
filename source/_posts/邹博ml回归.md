@@ -12,13 +12,9 @@ tags:
   - 高斯假设
 categories:
   - ML&DL
-permalink: /post/zou-bo-ml-return-1jgtec.html
 comments: true
 toc: true
 ---
-
-
-
 ## 线性回归
 
 对于单个变量：
@@ -30,7 +26,7 @@ y=ax+b
 ### 使用极大似然估计解释最小二乘法
 
 $y^{(i)}=\theta^{T}x^{(i)}+\varepsilon^{(i)}$
-误差$\varepsilon^{(i)}(1\le i\le m)$是独立同分布的，服从均值为0，方差为某定值$\sigma^{2}$的<span style="font-weight: bold;" class="bold">高斯分布</span>。
+误差$\varepsilon^{(i)}(1\le i\le m)$是独立同分布的，服从均值为0，方差为某定值$\sigma^{2}$的`<span style="font-weight: bold;" class="bold">`高斯分布。
 
 > 原因：中心极限定理
 
@@ -39,7 +35,7 @@ $y^{(i)}=\theta^{T}x^{(i)}+\varepsilon^{(i)}$
 在实际问题中，很多随机现象可以看做众多因素独立影响的综合反应，往往近似服从正态分布。
 ![截屏2020-03-04下午6.54.09](https://img.wush.cc/16311019408832.png?imageView2/0/format/webp/q/80)
 
-* 应用前提是多个<span style="font-weight: bold;" class="bold">随机变量的和</span>，有些问题是乘性误差，则需要鉴别或者取对数后使用。
+* 应用前提是多个`<span style="font-weight: bold;" class="bold">`随机变量的和，有些问题是乘性误差，则需要鉴别或者取对数后使用。
 
 ### 似然函数
 
@@ -75,8 +71,6 @@ $X^TX$半正定：对于任意非零向量u
 ### 线性回归的复杂度惩罚因子
 
 线性回归的目标函数为：
-
-#### ![截屏2020-03-04下午7.22.17](https://img.wush.cc/16311019409099.png?imageView2/0/format/webp/q/80)
 
 将目标函数增加平方和损失；
 ![截屏2020-03-04下午7.23.03](https://img.wush.cc/16311019409134.png?imageView2/0/format/webp/q/80)

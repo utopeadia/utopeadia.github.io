@@ -12,19 +12,14 @@ tags:
   - 偏导数
 categories:
   - ML&DL
-permalink: >-
-  /post/cv-learning-book-certain-metropolitan-law-optimization-algorithm-1wfpl4.html
 comments: true
 toc: true
 ---
-
-
-
 ## 梯度下降法
 
 * 梯度下降法是训练神经网络最常用的优化算法
-* <span style="font-weight: bold;" class="bold">梯度下降法（Gradient descent）</span> 是一个<span style="font-weight: bold;" class="mark">一阶最优化算法</span>，通常也称为最速下降法。要使用梯度下降法找到一个函数的<span style="font-weight: bold;" class="mark">局部最小值</span>，必须想函数上当前点对应的<span style="font-weight: bold;" class="mark">梯度</span>(或者是近似梯度)的反方向的规定部长距离点进行<span style="font-weight: bold;" class="mark">迭代</span>搜索。
-* 梯度下降法基于以下的观察：如果实值函数$f(x)$在a点处<span style="font-weight: bold;" class="mark">可微</span>并且有定义，那么函数$f(x)$在点a沿着<span style="font-weight: bold;" class="mark">梯度</span>相反的方向$-\nabla f(a)$下降最快
+* `<span style="font-weight: bold;" class="bold">`梯度下降法（Gradient descent） 是一个`<span style="font-weight: bold;" class="mark">`一阶最优化算法，通常也称为最速下降法。要使用梯度下降法找到一个函数的`<span style="font-weight: bold;" class="mark">`局部最小值，必须想函数上当前点对应的`<span style="font-weight: bold;" class="mark">`梯度(或者是近似梯度)的反方向的规定部长距离点进行`<span style="font-weight: bold;" class="mark">`迭代搜索。
+* 梯度下降法基于以下的观察：如果实值函数$f(x)$在a点处`<span style="font-weight: bold;" class="mark">`可微并且有定义，那么函数$f(x)$在点a沿着`<span style="font-weight: bold;" class="mark">`梯度相反的方向$-\nabla f(a)$下降最快
 
 $$
 \theta = \theta -\eta \cdot \nabla _{\theta}J(\theta)
@@ -73,10 +68,10 @@ for i in range (nb_epochs):
 
 ##### 特点
 
-* 在<span style="font-weight: bold;" class="mark">凸优化(Convex Optimization)</span>的情况下，一定会找到<span style="font-weight: bold;" class="mark">最优解</span>
-* 在<span style="font-weight: bold;" class="mark">非凸优化</span>的情况下，一定能找到<span style="font-weight: bold;" class="mark">局部最优解</span>
-* 单次调整<span style="font-weight: bold;" class="mark">计算量大</span>
-* 不适合<span style="font-weight: bold;" class="mark">在线(Online)</span>情况
+* 在`<span style="font-weight: bold;" class="mark">`凸优化(Convex Optimization)的情况下，一定会找到`<span style="font-weight: bold;" class="mark">`最优解
+* 在`<span style="font-weight: bold;" class="mark">`非凸优化的情况下，一定能找到`<span style="font-weight: bold;" class="mark">`局部最优解
+* 单次调整`<span style="font-weight: bold;" class="mark">`计算量大
+* 不适合`<span style="font-weight: bold;" class="mark">`在线(Online)情况
 
 #### 随机梯度下降法
 
@@ -95,13 +90,13 @@ for i in range(nb_epochs):
 
 与批处理相比，梯度更新在第二个循环内部，所以参数更新次数增多了。
 
-每一次循环前有一次<span style="font-weight: bold;" class="mark">shuffle</span>，遍历的顺序是随机的。
+每一次循环前有一次`<span style="font-weight: bold;" class="mark">`shuffle，遍历的顺序是随机的。
 
 ##### 特点
 
-* 适合<span style="font-weight: bold;" class="mark">Online</span>的情况
-* 通常比批处理下降法<span style="font-weight: bold;" class="mark">快</span>（在批处理的情况下，有可能许多数据点产生的梯度是相似的，属于冗余运算，并没有实际帮助）
-* 通常目标函数<span style="font-weight: bold;" class="mark">震荡严重</span>，在神经网络优化情况下（没有全局最优解），这种震荡反而有可能让它避免被套牢在一个局部最小值，而找到更好的<span style="font-weight: bold;" class="mark">局部最优解</span>![截屏2020-02-22下午5.30.12](https://img.wush.cc/16311026980501.png?imageView2/0/format/webp/q/80)
+* 适合`<span style="font-weight: bold;" class="mark">`Online的情况
+* 通常比批处理下降法`<span style="font-weight: bold;" class="mark">`快（在批处理的情况下，有可能许多数据点产生的梯度是相似的，属于冗余运算，并没有实际帮助）
+* 通常目标函数`<span style="font-weight: bold;" class="mark">`震荡严重，在神经网络优化情况下（没有全局最优解），这种震荡反而有可能让它避免被套牢在一个局部最小值，而找到更好的`<span style="font-weight: bold;" class="mark">`局部最优解![截屏2020-02-22下午5.30.12](https://img.wush.cc/16311026980501.png?imageView2/0/format/webp/q/80)
 * 通过调整学习率，能够找到和批处理相似的局部或者全局最优解
 
 #### 迷你批处理梯度下降法
@@ -130,9 +125,9 @@ for i in range(nb_epochs):
 ##### 特点
 
 * 结合了批处理和随机梯度下降法的优点
-* 减弱了目标函数震荡，更加<span style="font-weight: bold;" class="mark">稳定</span>
-* 易于<span style="font-weight: bold;" class="mark">硬件加速</span>实现，常用的机器学习库都利用了这个特性提供了高性能的计算速度（mini批可能能够放入GPU显存或者内存）
-* 一般的迷你批大小位<span style="font-weight: bold;" class="mark">50至256</span>，取决于不同的应用
+* 减弱了目标函数震荡，更加`<span style="font-weight: bold;" class="mark">`稳定
+* 易于`<span style="font-weight: bold;" class="mark">`硬件加速实现，常用的机器学习库都利用了这个特性提供了高性能的计算速度（mini批可能能够放入GPU显存或者内存）
+* 一般的迷你批大小位`<span style="font-weight: bold;" class="mark">`50至256，取决于不同的应用
 
 ## 传统梯度下降法面临的挑战
 

@@ -14,17 +14,13 @@ tags:
   - java安装
 categories:
   - 开发笔记
-permalink: /post/wsl2-ubuntu-configuration-java-hadoop-spark-environment-z14a1u.html
 comments: true
 toc: true
 ---
-
-
-
 ## 所需文件：
 
 2023更新，文件已弃用，请自行搜索下载
-~~更新日期为2021/5/8:~~ 
+~~更新日期为2021/5/8:~~
 ~~[Linux 内核更新包](https://quqi.gblhgk.com/s/460394/DbxQ349Q0Rcb5pi0)~~
 ~~[JDK1.8](https://quqi.gblhgk.com/s/460394/WgMZNC8nrfyrCdZP)~~
 ~~[maven3.8.1](https://quqi.gblhgk.com/s/460394/zUnOQG1O4ESVVUz4)~~
@@ -45,17 +41,17 @@ WSL是适用于 Linux 的 Windows 子系统可让开发人员按原样运行 GNU
 * 使用自己的 GNU/Linux 分发包管理器安装其他软件。
 * 使用类似于 Unix 的命令行 shell 调用 Windows 应用程序。
 * 在 Windows 上调用 GNU/Linux 应用程序。
-  WSL 2 是适用于 Linux 的 Windows 子系统体系结构的一个新版本，它支持适用于 Linux 的 Windows 子系统在 Windows 上运行 ELF64 Linux 二进制文件。 它的主要目标是 <span style="font-weight: bold;" class="bold">提高文件系统性能</span>，以及添加 <span style="font-weight: bold;" class="bold">完全的系统调用兼容性</span>。
+  WSL 2 是适用于 Linux 的 Windows 子系统体系结构的一个新版本，它支持适用于 Linux 的 Windows 子系统在 Windows 上运行 ELF64 Linux 二进制文件。 它的主要目标是 `<span style="font-weight: bold;" class="bold">`提高文件系统性能，以及添加 `<span style="font-weight: bold;" class="bold">`完全的系统调用兼容性。
   这一新的体系结构改变了这些 Linux 二进制文件与Windows 和计算机硬件进行交互的方式，但仍然提供与 WSL 1（当前广泛可用的版本）中相同的用户体验。
   单个 Linux 分发版可以在 WSL 1 或 WSL 2 体系结构中运行。 每个分发版可随时升级或降级，并且你可以并行运行 WSL 1 和 WSL 2 分发版。 WSL 2 使用全新的体系结构，该体系结构受益于运行真正的 Linux 内核。
-  <span style="font-weight: bold;" class="bold">简而言之</span>WSL类似于windows提供的虚拟机，同时相比VMWare Workstation拥有更好的IO性能且支持硬件直通。
+  `<span style="font-weight: bold;" class="bold">`简而言之WSL类似于windows提供的虚拟机，同时相比VMWare Workstation拥有更好的IO性能且支持硬件直通。
   WSL的官方文档地址：[https://docs.microsoft.com/zh-cn/windows/wsl/](https://docs.microsoft.com/zh-cn/windows/wsl/)
 
 ## 安装WSL和WSL2
 
 参考官方文档：[文档地址](https://docs.microsoft.com/zh-cn/windows/wsl/install-win10)
 执执行手动安装步骤即可。
-以管理员身份打开 PowerShell 并运行如下代码<span style="font-weight: bold;" class="bold">安装WSL</span>：
+以管理员身份打开 PowerShell 并运行如下代码`<span style="font-weight: bold;" class="bold">`安装WSL：
 
 ```
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
@@ -64,21 +60,21 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 ![image-20210615214513985](https://img.wush.cc/16310927929108.png?imageView2/0/format/webp/q/80)
 检查系统是否支持WSL2:
 
-* 对于 x64 系统：<span style="font-weight: bold;" class="bold">版本 1903</span> 或更高版本，采用 <span style="font-weight: bold;" class="bold">内部版本 18362</span> 或更高版本。
-* 对于 ARM64 系统：<span style="font-weight: bold;" class="bold">版本 2004</span> 或更高版本，采用 <span style="font-weight: bold;" class="bold">内部版本 19041</span> 或更高版本。
+* 对于 x64 系统：`<span style="font-weight: bold;" class="bold">`版本 1903 或更高版本，采用 `<span style="font-weight: bold;" class="bold">`内部版本 18362 或更高版本。
+* 对于 ARM64 系统：`<span style="font-weight: bold;" class="bold">`版本 2004 或更高版本，采用 `<span style="font-weight: bold;" class="bold">`内部版本 19041 或更高版本。
 * 低于 18362 的版本不支持 WSL 2。
   若要检查 Windows 版本及内部版本号，选择 Windows 徽标键 + R，然后键入“winver”，选择“确定”。
   如果不支持WSL2，可以直接重启电脑，安装Linux发行版即可。
-  以管理员身份打开 PowerShell 并运行如下代码<span style="font-weight: bold;" class="bold">启用虚拟机功能</span>：
+  以管理员身份打开 PowerShell 并运行如下代码`<span style="font-weight: bold;" class="bold">`启用虚拟机功能：
 
 ```
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
 ![image-20210615214538701](https://img.wush.cc/16310927929124.png?imageView2/0/format/webp/q/80)
-<span style="font-weight: bold;" class="bold">重启计算机</span>
+`<span style="font-weight: bold;" class="bold">`重启计算机
 下载安装 Linux 内核更新包：[点击下载](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
-打开 PowerShell，然后在安装新的 Linux 发行版时运行以下命令，<span style="font-weight: bold;" class="bold">将 WSL 2 设置为默认版本</span>：
+打开 PowerShell，然后在安装新的 Linux 发行版时运行以下命令，`<span style="font-weight: bold;" class="bold">`将 WSL 2 设置为默认版本：
 
 ```
 wsl --set-default-version 2
@@ -91,12 +87,12 @@ wsl --set-default-version 2
 ## 子系统安装java
 
 首先描述一下如何进行Windows和Linux之间的文件操作：
-**方法一<span style="font-weight: bold;" class="bold">：通过 `\wsl
+**方法一`<span style="font-weight: bold;" class="bold">`：通过 `\wsl
 
 ## 所需文件：
 
 2023更新，文件已弃用，请自行搜索下载
-~~更新日期为2021/5/8:~~ 
+~~更新日期为2021/5/8:~~
 ~~[Linux 内核更新包](https://quqi.gblhgk.com/s/460394/DbxQ349Q0Rcb5pi0)~~
 ~~[JDK1.8](https://quqi.gblhgk.com/s/460394/WgMZNC8nrfyrCdZP)~~
 ~~[maven3.8.1](https://quqi.gblhgk.com/s/460394/zUnOQG1O4ESVVUz4)~~
@@ -163,7 +159,7 @@ CODE_BLOCK_5
 **方法二**：通过VS Code访问Linux文件
 ![image-20210508173654794](https://img.wush.cc/16310927929199.png?imageView2/0/format/webp/q/80)
 参考文档：[CSDN博客](https://blog.csdn.net/Caoyang_He/article/details/107898883)
-**正式安装：** 
+**正式安装：**
 将所需的文件复制到WSL的目录中，我一般遵循实体机的习惯放置到下载目录。
 ![image-20210508195157301](https://img.wush.cc/16310927929225.png?imageView2/0/format/webp/q/80)
 cd到存放目录使用tar命令解压压缩文件：
@@ -238,7 +234,7 @@ cat ./id_rsa.pub >> ./authorized_keys  # 加入授权
 ```
 
 此时，再执行ssh localhost命令，无需输入密码就可以直接登录了。
-</span>下面安装hadoop**
+下面安装hadoop**
 Hadoop包括三种安装模式：
 单机模式：只在一台机器上运行，存储是采用本地文件系统，没有采用分布式文件系统HDFS； 伪分布式模式：存储采用分布式文件系统HDFS，但是，HDFS的名称节点和数据节点都在同一台机器上； 分布式模式：存储采用分布式文件系统HDFS，而且，HDFS的名称节点和数据节点位于不同机器上。 本文只介绍Hadoop的安装方法
 解压hadoop到制定目录：（我放在了/opt/hadoop）

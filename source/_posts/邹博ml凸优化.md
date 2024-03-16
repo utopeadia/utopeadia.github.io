@@ -11,13 +11,9 @@ tags:
   - 超平面
 categories:
   - ML&DL
-permalink: /post/zou-bo-ml-convex-optimization-z1c2dcl.html
 comments: true
 toc: true
 ---
-
-
-
 ## 主要内容
 
 * 凸集的基本概念
@@ -255,7 +251,7 @@ Jensen不等式是几乎所有不等式的基础
   $f_i(x)$为凸函数，$h_j(x)$为仿射函数
   凸优化问题的重要性质：
 * 凸优化问题的可行域为凸集
-* 凸优化问题的局部最优解就是<span style="font-weight: bold;" class="bold">全局最优解</span>
+* 凸优化问题的局部最优解就是`<span style="font-weight: bold;" class="bold">`全局最优解
 
 ### 对偶问题
 
@@ -277,7 +273,7 @@ Langrange对偶函数：
 ### 鞍点解释
 
 ![截屏2020-03-03下午5.09.59](https://img.wush.cc/16311026295139.png) ![截屏2020-03-03下午5.10.19](https://img.wush.cc/16311026295237.png?imageView2/0/format/webp/q/80)
-<span style="font-weight: bold;" class="bold">鞍点：最优点</span>
+`<span style="font-weight: bold;" class="bold">`鞍点：最优点
 ![截屏2020-03-03下午5.10.55](https://img.wush.cc/16311026295331.png?imageView2/0/format/webp/q/80)
 
 ### 强对偶条件
