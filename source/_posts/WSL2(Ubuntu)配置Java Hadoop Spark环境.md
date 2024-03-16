@@ -1,5 +1,5 @@
 ---
-title: WSL2+Ubuntu配置Java Hadoop Spark环境
+title: WSL2(Ubuntu)配置Java Hadoop Spark环境
 date: '2021-07-02 22:20:50'
 updated: '2023-11-22 21:10:23'
 excerpt: >-
