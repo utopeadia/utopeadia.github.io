@@ -17,22 +17,21 @@ comments: true
 toc: true
 ---
 ## 基本情况
-
 服务器目前拥有两台GPU，分别为:
 GPU0-RTX3090 24G
 GPU1-泰坦 12G
-![](https://img.wush.cc/231216171645-image.png?imageView2/0/format/webp/q/80)
-使用前请务必检查服务器负载，因为使用人数较少不进行个人资源限制。 `<span style="font-weight: bold;" class="bold">`因管理员太菜，容器出现问题修不了，只能删机重来（甚至删机命令都是百度的），请务必明确自己发出的每一条指令，备份好自己的重要数据，不要当做存储！
-
+![](https://img.wush.cc/231216171645-image.png)</br>
+使用前请务必检查服务器负载，因为使用人数较少不进行个人资源限制。</br>
+**因管理员太菜，容器出现问题修不了，只能删机重来（甚至删机命令都是百度的），请务必明确自己发出的每一条指令，备份好自己的重要数据，不要当做存储！**
 ```shell
 nvidia-smi
 ```
-
-服务器通过 docker 进行虚拟化和管理，所以容器中只保留 `</br>`
- `<span style="font-weight: bold;" class="bold">`/home/ubuntu `</br>`
- `<span style="font-weight: bold;" class="bold">`/data `</br>`
-两个目录内的文件。也就是说，自己安装的软件和这两个目录之外的东西都不会进行保留！容器已经内置了 nvidia 驱动、cuda、conda。
-如有问题，请联系现任`<span style="font-weight: bold;" class="bold">`管理员：吴树晖
+服务器通过 docker 进行虚拟化和管理，所以容器中只保留 </br>
+**/home/ubuntu** </br>
+**/data** </br>
+两个目录内的文件。也就是说，自己安装的软件和这两个目录之外的东西都不会进行保留！ </br>
+容器已经内置了 nvidia 驱动、cuda、conda，**除非明确知道自己需要做什么！明确知道自己敲入的每一条命令的后果！不要！不要！不要对GPU驱动和网络配置进行任何调整！** </br>
+如有问题，请联系现任**管理员：吴树晖**
 
 ## 连接方式
 
